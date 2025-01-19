@@ -59,5 +59,28 @@ body {
 
 (check the figma design for the hex code in the fill section you could see the hex code for each object ) 
 
+Font:
+we are going to be using 2 fonts.
+
+Font names : 
+
+Cormorant Garamond : Used mostly for names and titles. 
+Montserrat: was mostly used for descriptions. 
+
+- when pressing a certain text you could see it's font at the typography section in figma
+- use this article to understand the fonts propreties ( https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
+
+
+imports ( add it to the head of your html) : 
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+how to use for a certain object (body , text , paragraph , class  etc.... ):
+h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
 
 
