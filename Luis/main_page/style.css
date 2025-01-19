@@ -17,6 +17,7 @@
     box-sizing: border-box;
 }
 
+
 #main-background{
     background-color:var(--color-background);
     overflow-x: hidden;
