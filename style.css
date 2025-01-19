@@ -1,3 +1,16 @@
+/* add the root section to each of your css files */
+
+:root {
+    --color-primary: #2c4a3c;
+    --color-secondary: #94a18d;
+    --color-accent: #c69455;
+    --color-background: #fcf9f2;
+    --color-text: #1a2e28;
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --shadow-strong: 0 15px 40px rgba(0, 0, 0, 0.12);
+    --footer-background: #1a2e28;
+}
+
 * {
     margin: 0;
     padding: 0;
