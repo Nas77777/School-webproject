@@ -43,3 +43,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Select the featured products slider
+    const featuredProducts = [...document.querySelectorAll('.products-slider')];
+
+    // Select the navigation buttons
+    const nextBtns = [...document.querySelectorAll('.next-btn')];
+    const prevBtns = [...document.querySelectorAll('.prev-btn')];
+
+    // Add event listeners to each slider
+    featuredProducts.forEach((slider, i) => {
+        let containerDimension = slider.getBoundingClientRect();
+        let containerWidth = containerDimension.width;
+
+        nextBtns[i].addEventListener('click', () => {
+            slider.scrollLeft += containerWidth;
+        });
+
+        prevBtns[i].addEventListener('click', () => {
+            slider.scrollLeft -= containerWidth;
+        });
+    });
+});
