@@ -1,0 +1,103 @@
+.footer {
+    background-color:rgba(26, 46, 40, 1);
+    color:rgba(252, 249, 242, 1);
+    max-width:100%;
+    padding:60px 46px;
+    
+  }
+
+  .footer-contents {
+    align-items: flex-start;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    display:flex;
+    align-items:flex-start;
+  }
+
+  .footer-sections {
+    flex:1;
+    min-width:250px;
+    margin-bottom:20px;
+  }
+
+  .title {
+    font:600 40px Cormorant Garamond, serif;
+  }
+
+  .description {
+    font:500 15px Montserrat, sans-serif;
+    margin-top:10px;
+    margin-bottom: auto;
+  }
+
+  .social-link {
+    display:flex;
+    gap: 16px;
+    margin-top:20px;
+    margin-left: 0px;
+  }
+
+  .social-icon {
+    width:24px;
+    
+    aspect-ratio:1;
+  }
+
+  .section-title{
+    display:inline-block;
+    border-bottom: 1.5px solid orange;
+    padding-bottom:8px;
+    width:31%;
+    padding-left:  20px;
+    font: 700 25px Cormorant Garamond, serif;
+    margin-bottom:10px;
+    margin-top: 0%;
+  }
+
+  .nav-link-bar {
+    padding-left: 20px;
+    display:flex;
+    font:500 15px Montserrat,sans-serif;
+    text-decoration:none;
+    color:rgba(255, 255, 255, 1);
+    margin-top:5px;
+  }
+
+  .newsletter-form  {
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+    margin-bottom:auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .email {
+    border-radius:24px;
+    padding: 11px 21px;
+    border: 1px solid rgba(217, 217, 217, 0.429);
+    flex-grow: 2;
+  }
+
+  .submit-button  {
+    border-radius: 19px;
+    background-color: rgb(255, 165, 55);
+    padding: 11px 21px;
+    border:none;
+    cursor:pointer;
+  }
+  .footer-bottom {
+    text-align:center;
+    margin-top:40px;
+    font:400 15px Montserrat, sans-serif;
+  }
+  .telegram,
+  .telegram * {
+    box-sizing: border-box;
+  }
+  .telegram {
+    width:  36px;
+    height:  36px;
+    position:  relative;
+    object-fit:  cover;
+  }
