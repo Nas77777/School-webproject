@@ -12,11 +12,17 @@
 
 .box1{
     height: 275px;
-    width: 448px;
+    width: 440px;
     background-color: #D9D9D9;
     color: #2C4A3C;
     font-size: 32px;
+    padding: 10px;
 }
+
+.box1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
 
 .location_image{
     transform: translate(1px, -150px); 
@@ -24,47 +30,85 @@
 
 .location_p{
     color: #94A18D;
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     margin-left: 15px;
+    font-family: Montserrat;
 }
 .location_h6{
     color: #94A18D; 
     font-size: 20px;
     padding: 10px;
+    font-family: Montserrat;
 }
-.location_a{
-    font-size: 16px;
-    color: #FFFFFF;
-    border: 1px solid #2C4A3C;
-    padding: 6px;
+.buttons button {
+    flex: row;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
     background-color: #2C4A3C;
-    text-decoration: none;
-    border-radius: 8px;
-    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.header{
+.buttons button:hover {
+    background-color: #006200;
+}
+  
+.G_buttons button {
+    flex: row;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
+    
+    background-color: #2C4A3C;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.G_buttons button:hover {
+    background-color: #006200;
+}
+
+.directions button {
+    flex: row;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.directions button:hover {
+    background-color: black;
+    color: white;
+}
+
+.location_header{
     font-size:5vw;
     text-align: center;
 }
 
-.Direction{
-    border:1px; 
-    border-style: solid; 
-    border-color:#2C4A3C; 
-    background-color: #ffffff; 
-    color: #2C4A3C;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 25px;
+.buttons {
+    display: flex;
+    gap: 0.5rem;
 }
 
 .locations {
     padding: 2rem;
     background-color: #f9f9f9;
     text-align: center;
-  }
+}
   
 .card {
   background: #fff;
@@ -74,4 +118,16 @@
   width: 100%;
   max-width: 320px;
   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.location_title{
+    font-family: Cormorant Garamond;
+}
+
+.fa-clock {
+    color:#B8860B;
+}
+
+.fa-phone {
+    color: #B8860B;
 }
