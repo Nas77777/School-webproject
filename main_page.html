@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
         <nav>
@@ -45,8 +48,119 @@
             </div>
         </div>
     </header>
-    <script src="homepageScript.js"></script>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    
+    <section id="featured-products" class="featured-products">
+        <h2 class="ftr-title">Signature Dishes</h2>
+        <p class="section-subtitle">Culinary artistry meets plant-based innovation</p>
+        
+        <div class="products-slider">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" alt="Seasonal Garden Bowl">
+                    <div class="product-overlay">
+                        <span class="product-price">$24</span>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Seasonal Garden Bowl</h3>
+                    <p>Locally sourced vegetables, ancient grains, house-made dressing</p>
+                    <div class="product-tags">
+                        <span>Gluten-Free</span>
+                        <span>Organic</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554" alt="Truffle Mushroom Risotto">
+                    <div class="product-overlay">
+                        <span class="product-price">$28</span>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Truffle Mushroom Risotto</h3>
+                    <p>Arborio rice, wild mushrooms, black truffle, cashew cream</p>
+                    <div class="product-tags">
+                        <span>Chef's Special</span>
+                        <span>Creamy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8" alt="Artisanal Dessert Platter">
+                    <div class="product-overlay">
+                        <span class="product-price">$32</span>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Artisanal Dessert Platter</h3>
+                    <p>Raw cacao truffles, berry cheesecake, coconut panna cotta</p>
+                    <div class="product-tags">
+                        <span>Raw</span>
+                        <span>Sugar-Free</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="products-nav">
+            <button class="prev-btn" aria-label="Previous slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn" aria-label="Next slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <section id="sustainability-journey" class="sustainability-journey">
+        <h2>Our Sustainability Journey</h2>
+        <p class="section-subtitle">Making a difference, one plate at a time</p>
+        
+        <div class="journey-timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2020</span>
+                    <h3>Farm Partnership</h3>
+                    <p>Established partnerships with local organic farms</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-solar-panel"></i>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2021</span>
+                    <h3>100% Renewable Energy</h3>
+                    <p>Transitioned to solar power across all locations</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-recycle"></i>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2022</span>
+                    <h3>Zero Waste Initiative</h3>
+                    <p>Implemented comprehensive recycling and composting program</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <script src="homepageScript.js"></script>
 </body>
 </html>
 

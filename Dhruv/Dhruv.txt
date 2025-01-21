@@ -1,2 +1,0 @@
-I am just adding this so it shows on the github add you html and css file I dont think you will need js but if you need use it. 
-it needs to be responsive you could search on google or youtube how to make a section responsive and look at other examples https://youtu.be/QVNpTiFsGvw this video will help with a responsive grid also W3schools ahve alot of examples you could use. 
