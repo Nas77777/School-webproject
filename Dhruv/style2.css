@@ -87,7 +87,7 @@
     cursor:pointer;
   }
   .footer-bottom {
-    text-align:center;
+    margin-right: auto;
     margin-top:40px;
     font:400 15px Montserrat, sans-serif;
   }
@@ -100,4 +100,32 @@
     height:  36px;
     position:  relative;
     object-fit:  cover;
+  }
+  .fa-facebook {
+    color: white;
+  }
+  .fa-instagram {
+  color: white;
+  }
+  .fa-twitter{
+    color: white;
+  }
+  .fa-pinterest {
+    color: white;
+  }
+  .fa-paper-plane{
+    color: white;
+    transform: translateY(20px);
+    z-index: 1;
+  }
+  .footer-circle-border{
+    border: 2px solid #C69455;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    transform: translateX(-40px);
+    background-color: #C69455;
+  }
+  hr{
+    width: 1000000px;
   }
