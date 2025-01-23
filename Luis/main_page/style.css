@@ -199,6 +199,7 @@ body{
     right:280px;
     font-size:34px;
     color:#FFFFFF;
+    font-family:"Montserrat";
 }
 
 .event-container .event-card-1 .grey-box-1, 
@@ -206,7 +207,7 @@ body{
     position:relative;
     left:150px;
     bottom:440px;
-    background-color:#D9D9D9;
+    background-color:#FFFFFF;
     width:550px;
     height:440px;
 }
@@ -216,12 +217,14 @@ body{
     color:var(--color-primary);
     font-size:25px;
     padding:20px;
+    font-family:"Montserrat";
 }
 
 .event-container .grey-box-1 p, 
 .grey-box-2 p{
     color:var(--color-primary);
     font-size:18px;
+    font-family:"Montserrat";
 }
 
 .events-info-1, 
@@ -265,7 +268,7 @@ body{
 }
 
 .events .event-button{
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat";
     font-weight: 400;
     padding: 0.7rem 1rem;
     background-color: var(--color-accent);
@@ -435,7 +438,7 @@ body{
     .mobile-events .mobile-grey-box-1, 
     .mobile-events .mobile-grey-box-2{
         width:23rem;
-        height:19rem;
+        height:23rem;
     }
     
 }
@@ -443,9 +446,6 @@ body{
 .item-1, .item-2 img {
     max-width: 100%;
 }
-
-
-
 
 .mobile-events{
     display: none;
@@ -465,26 +465,29 @@ body{
 .mobile-grey-box-1, .mobile-grey-box-2{
     position:relative;
     bottom:1rem;
-    background-color:#D9D9D9;
+    background-color:#FFFFFF;
     width:27rem;
     height:19rem;
 }
 
 .mobile-events h5{
     color:#FFFFFF;
-    font-size:2rem;
+    font-size:1.9rem;
+    font-family:"Montserrat";
 }
 
 .mobile-events h3{
     color:var(--color-primary);
     font-size:1.4rem;
     padding-top:10px;
+    font-family:"Montserrat";
 }
 
 .mobile-events p{
     color:var(--color-primary);
     font-size:1rem;
     padding:10px;
+    font-family:"Montserrat";
 }
 
 .mobile-events-info-1, .mobile-events-info-2{
@@ -498,17 +501,17 @@ body{
 
 .mobile-events h4{
     color:var(--color-text);
-    font-size:1.3rem;
+    font-size:1.4rem;
     text-align:left;
     padding:0.2rem;
     position:relative;
     left:60px;
-    bottom:104px;
+    bottom:108px;
 }
 
 
 .mobile-events-button{
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat";
     font-weight: 400;
     padding: 0.7rem 1rem;
     background-color: var(--color-accent);
