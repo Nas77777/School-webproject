@@ -10,44 +10,49 @@
     align-content: flex-end;
 }
 
+
+
 .box1{
-    height: 275px;
-    width: 440px;
+    height: auto;
+    width: auto;
     background-color: #D9D9D9;
     color: #2C4A3C;
     font-size: 32px;
-    padding: 10px;
+    border-radius: 30px;
 }
 
 .box1:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
   }
 
-.location_image{
-    transform: translate(1px, -150px); 
+.location_image {
+    margin-right: 10px;
 }
 
 .location_p{
     color: #94A18D;
-    font-size: 15px;
+    font-size: 10px;
     display: inline-block;
     margin-left: 15px;
     font-family: Montserrat;
 }
 .location_h6{
     color: #94A18D; 
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px;
     font-family: Montserrat;
 }
 .buttons button {
     flex: row;
     padding: 10px;
-    margin-left: 20px;
-    margin-top: 30px;
+    font-size: 15px;
+    margin-left: 55px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: #2C4A3C;
     color: white;
     cursor: pointer;
@@ -61,15 +66,16 @@
 .G_buttons button {
     flex: row;
     padding: 10px;
-    margin-left: 100px;
-    margin-top: 30px;
+    margin-left: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: none;
-    border-radius: 4px;
-    
+    border-radius: 8px;
     background-color: #2C4A3C;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-size: 16px;
 }
 
 .G_buttons button:hover {
@@ -78,11 +84,13 @@
 
 .directions button {
     flex: row;
+    font-size: 15px;
     padding: 10px;
-    margin-left: 20px;
-    margin-top: 30px;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: white;
     color: black;
     cursor: pointer;
@@ -116,12 +124,14 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   width: 100%;
-  max-width: 320px;
+  max-width: 450px;
   transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 30px;
 }
 
 .location_title{
     font-family: Cormorant Garamond;
+    margin-left: 10px;
 }
 
 .fa-clock {
