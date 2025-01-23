@@ -17,7 +17,6 @@
 
 body{
     background-color:var(--color-background);
-    overflow-x: hidden;
     font-family: "Cormorant Garamond", serif ;
     font-weight: 600 italic ;
     line-height: 1.6;
@@ -177,6 +176,15 @@ body{
     gap:5rem;
 }
 
+.green-box-1, .green-box-2{
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.event-card-1:hover, .event-card-2:hover{
+    transform: translateY(-3px);
+}
+
+
 .event-container .event-card-1 .green-box-1{
     background-color:var(--color-primary);
     border-radius: 15px;
@@ -201,15 +209,17 @@ body{
     height:440px;
 }
 
-.event-container .grey-box-1 h3{
+.event-container .grey-box-1 h3, 
+.grey-box-2 h3{
     color:var(--color-primary);
-    font-size:31px;
+    font-size:25px;
     padding:20px;
 }
 
-.event-container .grey-box-1 p{
+.event-container .grey-box-1 p, 
+.grey-box-2 p{
     color:var(--color-primary);
-    font-size:23px;
+    font-size:18px;
 }
 
 .events-info-1{
@@ -256,15 +266,9 @@ body{
     height:440px;
 }
 
-.event-container .grey-box-2 h3{
+.event-container {
     color:var(--color-primary);
-    font-size:31px;
-    padding:20px;
-}
-
-.event-container .grey-box-2 p{
-    color:var(--color-primary);
-    font-size:23px;
+    font-size:18px;
 }
 
 .events-info-2{
@@ -287,6 +291,11 @@ body{
     left:70px;
 }
 
+.grey-box-1 h4 + h4, .grey-box-2 h4 + h4{
+    position:relative;
+    bottom:107px;
+}
+
 .events .event-button{
     font-family: "Montserrat", serif;
     font-weight: 400;
@@ -297,11 +306,11 @@ body{
     text-align: center;
     font-size: 24px;
     margin: 4px 3px;
-    border-radius: 10px;
+    border-radius: 30px;
     transition: all 0.3s ease;
     cursor: pointer;
     position:relative;
-    bottom:30px;
+    bottom:50px;
     right:150px;
 }
 
@@ -314,6 +323,27 @@ body{
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Our Vision */
+    .our-vision h2{
+        font-size: 3rem;
+    }
+
+    .our-vision p{
+        font-size: 1.4rem;
+    }
+
+
+
+    /* Chef Table */
+    .chef h2{
+        font-size: 3rem;
+    }
+
+    .chef p{
+        font-size: 1.6rem;
+    }
+
+
     .container-1 {
         flex-direction: column;
     }
@@ -323,6 +353,112 @@ body{
         height: auto;
     }
 
+    .container-1 .item-1 {
+        order:2;
+    }
+
+    .container-1 .item-1 h5{
+        font-size: 1.5rem;;
+    }
+
+    .container-1 .item-1 p{
+        position:relative;
+        right:3rem;
+        max-width: 800px;
+        font-size: 1.5rem;;
+    }
+
+
+    /* Events */
+    .events h2{
+        font-size: 3.4rem;
+    }
+
+    .events p{
+        font-size: 1.7rem;
+    }
+
+    .event-container{
+        overflow-x: hidden;
+        flex-direction: column;
+        width:100%;
+    }
+
+    .event-container .grey-box-2 h3, 
+    .grey-box-1 h3 {
+        text-align: left;
+        padding-left:2rem;
+        font-size:1.7rem;
+    }
+
+    .event-container .grey-box-2 p,
+    .grey-box-1 p{
+        text-align: left;
+        padding-left:2rem;
+        font-size:1.3rem;
+        max-width: 400px;
+    }
+
+    .event-container .grey-box-2 .event-button, 
+    .grey-box-1 .event-button{
+        position: relative;
+        bottom:4.8rem;
+    }
+}
+
+
+/* Smaller Screens */
+@media (max-width: 480px) {
+    /* Our Vision */
+    .our-vision h2{
+        font-size: 3rem;
+    }
+
+    .our-vision p{
+        font-size: 1.4rem;
+    }
+
+
+    /* Chef Table */
+    .chef h2{
+        font-size: 2.2rem;
+        padding:10px;
+    }
+
+    .chef p{
+        font-size: 1.4rem;
+    }
+
+    .container-1 {
+        flex-direction: column;
+    }
+
+    .item-2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-1 .item-1 {
+        order:2;
+    }
+
+    .container-1 .item-1 h5{
+        font-size: 1.2rem;
+        margin-bottom:5px;
+    }
+
+    .container-1 .item-1 p{
+        padding-left:3rem;
+        font-size: 1.2rem;
+        max-width: 1000px;
+    }
+
+    .container-2 i{
+        font-size:1.2rem;
+    }
+
+
+    /* Events */
     .event-container{
         overflow: hidden;
         flex-direction: column;
