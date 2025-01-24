@@ -1,4 +1,4 @@
-.footer {
+.footers {
     background-color:rgba(26, 46, 40, 1);
     color:rgba(252, 249, 242, 1);
     max-width:100%;
@@ -6,18 +6,27 @@
     
   }
 
-  .footer-contents {
+  .footer-content {
     align-items: flex-start;
     justify-content:space-between;
     flex-wrap:wrap;
     display:flex;
     align-items:flex-start;
+    flex:1;
+    margin: 0 9px;
   }
 
-  .footer-sections {
+  .footer_section2 {
     flex:1;
     min-width:250px;
     margin-bottom:20px;
+  }
+
+  .footer_section {
+    flex:1;
+    min-width:250px;
+    margin-bottom:20px;
+    padding-left: 15%;
   }
 
   .title {
@@ -25,12 +34,14 @@
   }
 
   .description {
-    font:500 15px Montserrat, sans-serif;
+    
+    font:500 14px Montserrat, sans-serif;
     margin-top:10px;
     margin-bottom: auto;
+    line-height: 1.5;
   }
 
-  .social-link {
+  .social_links {
     display:flex;
     gap: 16px;
     margin-top:20px;
@@ -43,18 +54,31 @@
     aspect-ratio:1;
   }
 
-  .section-title{
+  .section_title2{
     display:inline-block;
-    border-bottom: 1.5px solid orange;
+    border-bottom: 1.2px solid orange;
     padding-bottom:8px;
     width:31%;
     padding-left:  20px;
-    font: 700 25px Cormorant Garamond, serif;
+    font: 700 18px Cormorant Garamond, serif;
     margin-bottom:10px;
     margin-top: 0%;
+    font-weight: bold;
   }
 
-  .nav-link-bar {
+  .section_title{
+    display:inline-block;
+    border-bottom: 1.2px solid orange;
+    padding-bottom:8px;
+    width:31%;
+    padding-left:  40px;
+    font: 700 18px Cormorant Garamond, serif;
+    margin-bottom:10px;
+    margin-top: 0%;
+    font-weight: bold;
+  }
+
+  .nav_link-bar {
     padding-left: 20px;
     display:flex;
     font:500 15px Montserrat,sans-serif;
@@ -63,7 +87,7 @@
     margin-top:5px;
   }
 
-  .newsletter  {
+  .newsletters {
     display:flex;
     gap:10px;
     margin-top:10px;
@@ -79,17 +103,31 @@
     flex-grow: 2;
   }
 
+  .white-line {
+    width: 100%; /* Adjust width as needed */
+    height: 2px; /* Adjust thickness as needed */
+    background-color: white;
+    margin: 20px 0; /* Optional margin */
+
   .submit-button  {
-    border-radius: 19px;
-    background-color: rgb(255, 165, 55);
-    padding: 11px 21px;
+    border-radius: 20px;
+    background-color: rgb(249, 159, 49);
+    font-size: 12px;
+    display:block;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    padding: 5px;
     border:none;
     cursor:pointer;
+    font-family: sans-serif;
+    
   }
   .footer-bottom {
     margin-right: auto;
     margin-top:40px;
-    font:400 15px Montserrat, sans-serif;
+    font:400 12px Montserrat, sans-serif;
   }
   .telegram,
   .telegram * {
