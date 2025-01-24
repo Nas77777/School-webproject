@@ -1,79 +1,57 @@
-.About-body{
-    padding-top: 30px;
-    min-height: 800px;
-    border: 0px solid #2C4A3C;
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    background-color: #FCF9F2 ;
-     
-}
 
-.box3 {
- height: auto;
- width: auto;
- color: black;
- font-size: 32px;
- text-align: center;
- align-items: center ;
- border-radius: 25px;
-}
-
-.About-header{
-    margin-top: 70px;
-    font-size: 60px;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     text-align: center;
+    color:#0ab364;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.About-wrapper{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(Image_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.About-testimonial{
+    padding: 30px 100px;
+}
+article .About-h1{
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
     color: #C69455;
-    font-family: Georgia, serif;
-    background-color: #2C4A3C;
-    border-radius: 10px;
 }
 
-.About_nav_bar{
-    background-color: #FCF9F2;
-    padding-right: 15px;
-    padding-left: 15px;
+article .About-h1::after{
+    content: "";
+    height: 5px;
+    width: 225px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
 }
 
-.About_nav_div{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+article img{
+    margin-top: 20px;
+    height: 300px;
+    width: 350px;
+    border: 2px solid#fff;
+    border-radius: 25%;
 }
 
-a{
-    text-decoration: none;
+backquotes{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
 }
 
-.About_logo {
-    color: #2C4A3C;
-    font-size: 38px;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-.About_list {
-    list-style: none;
-    display: inline-block;
-    color: #2C4A3C;
-    margin-right: 25px;
-    font-size: 16px;
-    background-color: #ffffff;
-}
-
-.About_list:hover{
-    background-color: black;
-    color: #ffffff;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 5px;
-}
-
-.About-text{
-    font-size:18px;
-    color: #2C4A3C;
-    border-radius: 30px;
+article .About-h5{
+    text-transform: uppercase;
+    font-size: 27px;
+    margin-top: 30px;
+    color: #C69455;
 }
