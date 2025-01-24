@@ -41,7 +41,7 @@ body{
     padding-bottom:20px;
     color:var( --color-secondary);
     font-size:28px;
-    font-family:Montserrat;
+    font-family:"Montserrat";
     font-weight:400;
 }
 
@@ -534,19 +534,6 @@ body{
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     background-color:var(--color-primary);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .nav-btn {
     font-family: "Montserrat", serif;
