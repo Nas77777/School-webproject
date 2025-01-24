@@ -108,7 +108,7 @@
     height: 2px; /* Adjust thickness as needed */
     background-color: white;
     margin: 20px 0; /* Optional margin */
-
+  }
   .submit-button  {
     border-radius: 20px;
     background-color: rgb(249, 159, 49);
