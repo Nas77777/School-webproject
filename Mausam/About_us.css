@@ -55,3 +55,18 @@ article .About-h5{
     margin-top: 30px;
     color: #C69455;
 }
+
+.about-h3 {
+    font-weight: bolder;
+    color: #C69455;
+}
+
+.about-p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.about-h2 {
+    font-size: 25px;
+    color: #C69455;
+}
