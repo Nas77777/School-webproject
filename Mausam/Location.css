@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .location_body{
     min-height: 800px;
     border: 0px solid #2C4A3C;
@@ -33,22 +37,24 @@
 
 .location_p{
     color: #94A18D;
-    font-size: 10px;
+    font-size: 13px;
     display: inline-block;
     margin-left: 15px;
-    font-family: Montserrat;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
 }
 .location_h6{
     color: #94A18D; 
     font-size: 15px;
     padding: 10px;
-    font-family: Montserrat;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
 }
 .buttons button {
     flex: row;
     padding: 10px;
-    font-size: 15px;
-    margin-left: 55px;
+    font-size: 20px;
+    margin-left: 30px;
     margin-top: 10px;
     margin-bottom: 20px;
     border: none;
@@ -56,6 +62,8 @@
     background-color: #2C4A3C;
     color: white;
     cursor: pointer;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600px;
     transition: background-color 0.3s;
 }
 
@@ -75,7 +83,9 @@
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600px;
 }
 
 .G_buttons button:hover {
@@ -84,7 +94,7 @@
 
 .directions button {
     flex: row;
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px;
     margin-left: 60px;
     margin-top: 10px;
@@ -94,6 +104,8 @@
     background-color: white;
     color: black;
     cursor: pointer;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600px;
     transition: background-color 0.3s;
 }
 
@@ -105,6 +117,8 @@
 .location_header{
     font-size:5vw;
     text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600px;
 }
 
 .buttons {
@@ -130,7 +144,8 @@
 }
 
 .location_title{
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600px;
     margin-left: 10px;
 }
 
