@@ -1159,3 +1159,41 @@ another way of styling the buttons in the header */
      font-family: "Montserrat", serif;
      font-weight: 600;
  }
+
+ /* Refrence Pgae*/
+
+ .Refrence_body{
+    background-color: #2c4a3c;
+    color: #006200;
+    min-width: 1000px, 100%, - 3rem;
+    margin-inline: auto;
+ }
+
+ th{
+    border: 3px solid white;
+ }
+
+ tr{
+    font-size: 60px;
+    border: 3px solid white;
+ }
+ td{
+    font-size: 30px;
+    background-color: #2C4A3C;
+    border: 3px solid white;
+ }
+
+ table{
+    padding-left: 100%;
+    border-collapse: collapse;
+    margin-bottom: 100px;
+    margin-left: 15%;
+    border: 3px solid white;
+    margin-top: 100px;
+ }
+
+ .R-Table{
+    max-width: 100%;
+    overflow-x: auto;
+    background-color: black;
+ }
