@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <title>Login</title>
+</head>
+<body>
+<center>
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    
+    <div class="main">
+        <h1 class = "sign" >Create an Account</h1>
+        <form method="POST" class = "form">
+            <br><br>
+            
+            <label for="Email"></label>
+            <input class = "un" type="email" name="email" placeholder="Enter your Email here" required>
+            <br>
+            <label for="phone"></label>
+            <input class = "un" type="tel" name="phone" placeholder="Enter your phone number here" required>
+            <br>
+            <label for="username"></label>
+            <input class = "un" type="text" name="username" placeholder="Enter your username here " required>
+            <br>
+            <label for="username"></label>
+            <input class = "pass" type="password" name="password" placeholder="Enter your password here" required>
+            <br>
+            <label for="username"></label>
+            <input class = "pass" type="password" name="confirm_password" placeholder="Re-enter password here" required>
+            <br><br><br>
+            <button class = "submit" type="submit">Create Account</button>
+            <br><br><br>
+            <p class="forgot" align="center"> have an account ? <a href="{{ url_for('login') }}"> Sign in</a> </p>
+
+        </form>
+    </div>
+</center>
+</body>
+</html>
