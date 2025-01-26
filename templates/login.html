@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+    <title>Login</title>
+</head>
+<body>
+    <center>
+        {% if error %}
+        <p style="color: red;">{{ error }}</p>
+        {% endif %}
+        
+    <div class = "main"> 
+        <h1 class = "sign"> Sign in </h1>
+        <form method="POST" class = "form1" >
+            <br>
+            <input class = "un" type="email" name="email" placeholder="Enter your Email here" required>
+            <input class = "un" type="text" name="username"  align="center" placeholder="Username" required>
+            <input class= "pass" type="password" name="password" align="center" placeholder="Password" minlength="8" required />
+            <input class = "submit" type="submit"  value="Sign in" />
+            <br><br>
+            
+            <!-- changed name signup to sign_up -->
+            <p class="forgot" align="center"> Don't have an account ? <a href="{{ url_for('sign_up')}}"> Sign up</a> </p>
+            
+        </form>
+    </div>
+    </center>
+</body>
+</html>

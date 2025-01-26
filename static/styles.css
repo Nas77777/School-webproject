@@ -1,0 +1,127 @@
+body {
+    justify-content: right ;
+    background-image: linear-gradient(to right, #F5F5F5, #E8F5E9);
+    font-family: 'Ubuntu', sans-serif;
+}
+  
+.main {
+      justify-content: right ;
+      background-color: #FFFFFF;
+      width: 500px;
+      height: 600px;
+      margin: 10em auto;
+      border-radius: 3em;
+      box-shadow: 0px 11px 35px 2px rgba(0,0,0,0.14);
+ }
+  
+
+.sign {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  padding-left: 15px;
+  justify-content: flex-end;
+  padding-top: 85px;
+  color: chocolate;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+}
+
+
+.forgot-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.forgot {
+  font-size: 15px;
+  color: #424242;
+  margin-right: 10px; 
+}
+
+
+a {
+  padding-top: 0px;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  text-shadow: 2px 2px 3px rgba(117, 117, 117, 0.12);
+  color: #424242;
+  font-size: 17px;
+  font-family: 'Ubuntu', sans-serif;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+
+a:hover {
+  opacity: 1;
+}
+
+
+.un, .pass {
+  width: 76%;
+  color: rgb(38,50,56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background-color: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0,0,0,0.02);
+  margin-bottom: 25px;
+  margin-left: 40px;
+  text-align: center;
+  margin-left: 0px;
+  font-family: 'Ubuntu', sans-serif;
+ /* box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s ease; */
+}
+
+.un:focus, .pass:focus {
+  border: 2px solid rgba(0, 0, 0, 0.18);
+}
+
+
+form.form1 {
+  padding-top: 15px;
+}
+
+
+.submit {
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5em;
+  color: #fff;
+  background: linear-gradient(to right, #FFEB3B, #81C784);
+  border: 0;
+  padding: 15px 50px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 2%;
+  font-size: 13px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.submit:hover {
+  background: linear-gradient(to right, #81C784, #FFEB3B);
+  transform: scale(1.05);
+}
+
+  
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+      .main {
+          border-radius: 0px;
+      }
+  }
