@@ -130,12 +130,19 @@
   .telegram * {
     box-sizing: border-box;
   }
-  .telegram {
-    width:  36px;
-    height:  36px;
+  .fa-telegram {
+    font-size: 38px;
     position:  relative;
-    object-fit:  cover;
+    color: white;
   }
+
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: white;
+  }
+
   .fa-facebook {
     color: white;
   }
