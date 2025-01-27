@@ -116,7 +116,8 @@ class Events(db.Model):
     Start_time = db.Column(db.Time, nullable=False)
     finish_time = db.Column(db.Time, nullable=False)
     ticket = db.Column(db.String(100), nullable=False)
-
+    
+# Newsletter Signup Table
 class NewsletterSignup(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     email_address = db.Column(db.String(120), unique=True, nullable=False)
@@ -160,6 +161,7 @@ class ProductAdminView(MyModelView):
         'image_url': ImageUploadField('Image', base_path=app.config['UPLOAD_FOLDER'], allowed_extensions=app.config['ALLOWED_EXTENSIONS'])
     }
 
+admin.add_view(AvailabilityView(Availability, db.session))
 admin.add_view(ProductAdminView(MenuItem, db.session))
 admin.add_view(MyModelView(User, db.session))
 admin.add_view(MyModelView(NewsletterSignup, db.session))
@@ -255,8 +257,8 @@ def login():
 
 @app.route('/home', methods=['GET', 'POST'])
 def mainpage():
-    
-    return render_template('main-page.html')
+    events = Events.query.all()
+    return render_template('main-page.html', events=events)
 
 if __name__ == '__main__':
     with app.app_context():
@@ -271,7 +273,7 @@ def menu():
     return render_template("menu.html", products=products)
 
 
-@app.route('/rservation', methods=['GET', 'POST'])
+@app.route('/reservation', methods=['GET', 'POST'])
 def reservation():
     user_id = session.get('user_id')
     if not user_id:
@@ -396,6 +398,17 @@ def confirm():
         number_of_guests=number_of_guests, 
         special_requests=special_requests)
 
+@app.route('/events', methods=['GET', 'POST'])
+def events():
+    events = Events.query.all()
+
+    return render_template('events.html', events=events)
+
+@app.route('/logout')
+def logout():
+    session.clear()
+    return redirect(url_for('home'))
+
 icon_dictionary = {
     "appetizers": '<i class="fas fa-leaf"></i>',
     "soups": '<i class="fas fa-utensils"></i>',
@@ -405,6 +418,42 @@ icon_dictionary = {
     "beverages": '<i class="fas fa-glass-martini-alt"></i>'
 }
 
+@app.route('/staff_reservations', methods=['GET', 'POST'])
+@login_required
+def staff_reservation():
+    if current_user.role != 'admin':
+        flash("You do not have permission to access this page.", "danger")
+        return redirect(url_for('mainpage'))
+    
+    reservations = []
+    selected_date = None  
+    if request.method == 'POST':
+        select_date_str = request.form.get('selected_date')
+        if select_date_str:
+            selected_date = datetime.strptime(select_date_str, '%Y-%m-%d').date()
+
+            
+            reservations = Reservation.query.join(Availability).filter(
+                Availability.date == selected_date
+            ).all()
+
+            
+            reservations_details = []
+            for reservation in reservations:
+                user = User.query.get(reservation.user_id)  
+                reservations_details.append({
+                    "id": reservation.id,
+                    "user_name": user.name if user else "N/A",  
+                    "number_of_guests": reservation.number_of_guests,
+                    "special_requests": reservation.special_requests,
+                    "start_time": reservation.availability.formatted_start_time,
+                    "end_time": reservation.availability.formatted_end_time,
+                    "status": reservation.status,
+                })
+
+            reservations = reservations_details  
+
+    return render_template('staff_reservations.html', reservations=reservations, selected_date=selected_date)
 
 if __name__ == '__main__':
     with app.app_context():

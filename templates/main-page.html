@@ -57,7 +57,7 @@
         <div class="products-slider">
             {% if featured_products %}
                 {% for product in featured_products %}
-                    {% if loop.index0 % 4 == 0 %}
+                    {% if loop.index0 % 6 == 0 %}
                     <div class="product-card">
                         <div class="product-image">
                             <img src="{{ url_for('uploaded_file', filename=product.image_url) }}" alt="{{ product.name }}">
@@ -208,98 +208,58 @@
         <section class="events">
             <h2>Events</h2>
             <p>Join our culinary community</p>
-
+        {% if events %}
+            {% for event in events %}
             <div class="event-container">
                 <div class="event-card-1">
                     <div class="green-box-1">
-                        <h5>11</h5>
-                        <h5>MAR</h5>
+                        <h5>{{event.date}}</h5>
+                        <h5>{{event.month}}</h5>
                     </div>
     
                     <div class="grey-box-1">
-                        <h3>Plant-Based Cooking Masterclass</h3>
-                        <p>Learn the art of vegan cuisine from our expert chefs</p>
+                        <h3>{{event.title}}</h3>
+                        <p>{{event.description}}</p>
 
                         <div class="events-info-1">
                             <i class="fa-solid fa-clock"></i>
                             <i class="fa-solid fa-ticket"></i>
                         </div>
 
-                        <h4>2:00 PM - 5:00 PM</h4>
-                        <h4>$75 per person</h4>
+                        <h4>{{event.Start_time}} - {{event.finish_time}}</h4>
+                        <h4>{{event.ticket}} per person</h4>
                         <a href="#book"> 
                         <button class="event-button">Book Now</button></a>
                     </div>
                 </div>
-
-                <div class="event-card-2">
-                    <div class="green-box-2">
-                        <h5>22</h5>
-                        <h5>MAR</h5>
-                    </div>
-
-                    <div class="grey-box-2">
-                        <h3>Cocktails  & Cheese Pairing</h3>
-                        <p>Discover artisan vegan cheese and wine combinations</p>
-                        
-                        <div class="events-info-2">
-                            <i class="fa-solid fa-clock"></i>
-                            <i class="fa-solid fa-ticket"></i>
-                        </div>
-
-                        <h4>2:00 PM - 5:00 PM</h4>
-                        <h4>$75 per person</h4>
-                        <a href="#book"> 
-                        <button class="event-button">Book Now</button></a>
-                    </div>
-                </div>
-            </div>
 
             <div class="mobile-events">
                 <div class="mobile-event-card-1">
                     <div class="mobile-green-box-1">
-                        <h5>11</h5>
-                        <h5>MAR</h5>
+                        <h5>{{event.date}}</h5>
+                        <h5>{{event.month}}</h5>
                     </div>
 
                     <div class="mobile-grey-box-1">
-                        <h3>Cocktails  & Cheese Pairing</h3>
-                        <p>Discover artisan vegan cheese and wine combinations</p>
+                        <h3>{{event.title}}</h3>
+                        <p>{{event.description}}</p>
 
                         <div class="mobile-events-info-1">
                             <i class="fa-solid fa-clock"></i>
                             <i class="fa-solid fa-ticket"></i>
                         </div>
 
-                        <h4>2:00 PM - 5:00 PM</h4>
-                        <h4>$75 per person</h4>
+                        <h4>{{event.Start_time}} - {{event.finish_time}}</h4>
+                        <h4>{{event.ticket}} per person</h4>
                         <a href="#book"> 
                         <button class="mobile-events-button">Book Now</button></a>
                     </div>
+            {% else %}
+                <p>No events found</p>
                 </div>
-
-                <div class="mobile-event-card-2">
-                    <div class="mobile-green-box-2">
-                        <h5>22</h5>
-                        <h5>MAR</h5>
-                    </div>
-
-                    <div class="mobile-grey-box-2">
-                        <h3>Plant-Based Cooking Masterclass</h3>
-                        <p>Learn the art of vegan cuisine from our expert chefs</p>
-
-                        <div class="mobile-events-info-2">
-                            <i class="fa-solid fa-clock"></i>
-                            <i class="fa-solid fa-ticket"></i>
-                        </div>
-
-                        <h4>2:00 PM - 5:00 PM</h4>
-                        <h4>$75 per person</h4>
-                        <a href="#book"> 
-                        <button class="mobile-events-button">Book Now</button></a>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
+            {% endif %}
         </section>
     </main>
 
