@@ -182,6 +182,7 @@ def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 
+@app.route('/', methods=['GET', 'POST'])
 @app.route('/home_page', methods=['GET', 'POST'])
 def Futured_product():
     featured_products = MenuItem.query.filter_by(is_featured=1).all()
@@ -455,7 +456,15 @@ def staff_reservation():
 
     return render_template('staff_reservations.html', reservations=reservations, selected_date=selected_date)
 
+@app.route('/contact_us', methods=['GET', 'POST'])
+def contact():
+    return render_template('contact-page.html')
+
+@app.route('/about_us', methods=['GET', 'POST'])
+def about():
+    return render_template('about.html')
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-    app.run(debug=True)
+    app.run(debug=False)
