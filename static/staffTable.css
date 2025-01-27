@@ -102,3 +102,12 @@ table {
 .btn:hover{
     background-color: var(--clr-primary-dark);
 }
+
+.btn:active{
+    transform: scale(0.98);
+}
+a{
+    text-decoration: none;
+    top: 0;
+
+}
