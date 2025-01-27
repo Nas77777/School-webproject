@@ -182,6 +182,7 @@ def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 
+@app.route('/', methods=['GET', 'POST'])
 @app.route('/home_page', methods=['GET', 'POST'])
 def Futured_product():
     featured_products = MenuItem.query.filter_by(is_featured=1).all()
