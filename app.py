@@ -455,6 +455,14 @@ def staff_reservation():
 
     return render_template('staff_reservations.html', reservations=reservations, selected_date=selected_date)
 
+@app.route('/contact_us', methods=['GET', 'POST'])
+def contact():
+    return render_template('contact-page.html')
+
+@app.route('/about_us', methods=['GET', 'POST'])
+def about():
+    return render_template('about.html')
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()

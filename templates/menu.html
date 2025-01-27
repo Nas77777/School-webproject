@@ -9,26 +9,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <nav class="navbar">
-                <span class="name"> Verdant </span>
+        <nav>
+            <nav class="navbar">
+                    <span class="name"> Verdant </span>
 
-            </div>
-            <div class="nav-links">
-                <a href="#home">HOME</a>
-                <a href="#menu">MENU</a>
-                <a href="#about">ABOUT</a>
-                <a href="#contact">CONTACT</a>
-                <a href="#RESERVATION"> 
-                <button class="nav-btn"> RESERVATION </button> </a>
-                
-            </div>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
+                </div>
+                <div class="nav-links">
+                    <a href="{{ url_for('Futured_product') }}">HOME</a>
+                    <a href="{{ url_for('menu') }}">MENU</a>
+                    <a href="{{ url_for('menu') }}">ABOUT</a>
+                    <a href="{{ url_for('contact') }}">CONTACT</a>
+                    <a href="{{ url_for('reservation') }}"> 
+                    <button class="nav-btn"> RESERVATION </button> </a>
+                    
+                </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+
         </nav>
 
-    </nav>
     <main>
         <section class="menu-hero">
             <h1>Our Menu</h1>
@@ -95,29 +96,6 @@
                 </div>
             {% endfor %}
 
-            <div class="menu-category active" id="appetizers">
-                <h2>Appetizers</h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <div class="menu-item-image">
-                            <img src="images/appetizer1.jpg" alt="Truffle Arancini">
-                            <div class="menu-item-badge">Chef's Choice</div>
-                        </div>
-                        <div class="menu-item-info">
-                            <h3>Truffle Arancini</h3>
-                            <p>Wild mushroom risotto balls with black truffle and cashew mozzarella</p>
-                            <div class="menu-item-footer">
-                                <span class="price">$16</span>
-                                <div class="dietary-info">
-                                    <span class="gluten-free" title="Gluten-Free"><i class="fas fa-wheat-awn-circle-exclamation"></i></span>
-                                    <span class="nut-free" title="Contains Nuts"><i class="fas fa-seedling"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
         </section>
     </main>
 
