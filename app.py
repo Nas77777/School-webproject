@@ -464,6 +464,11 @@ def contact():
 def about():
     return render_template('about.html')
 
+@app.route('/refrences', methods=['GET', 'POST'])
+def refrences():
+
+    return render_template('Refrence.HTML')
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
