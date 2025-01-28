@@ -67,36 +67,38 @@
 
 
         <section class="menu-content">
-            {% for product in products %}
-                <div class="menu-category" id="{{ product.category }}">
-                    <h2>{{ product.category | capitalize }}</h2>
+            {% for category in products | groupby('category') %}
+                <div class="menu-category" id="{{ category.grouper }}">
+                    <h2>{{ category.grouper | capitalize }}</h2>
                     <div class="menu-grid">
-                        <div class="menu-item">
-                            <div class="menu-item-image">
-                                <img src="{{ url_for('uploaded_file', filename=product.image_url) }}" alt="{{ product.name }}">
-                                <div class="menu-item-badge">{{product.tag1}}</div>
-                            </div>
-                            <div class="menu-item-info">
-                                <h3>{{ product.name }}</h3>
-                                <p>{{ product.description }}</p>
-                                <div class="menu-item-footer">
-                                    <span class="price">${{ product.price }}</span>
-                                    <div class="dietary-info">
-                                        {% if product.gluten_free %}
-                                            <span class="gluten-free" title="Gluten-Free"><i class="fas fa-wheat-awn-circle-exclamation"></i></span>
-                                        {% endif %}
-                                        {% if product.nut_free %}
-                                            <span class="nut-free" title="Contains Nuts"><i class="fas fa-seedling"></i></span>
-                                        {% endif %}
+                        {% for product in category.list %}
+                            <div class="menu-item">
+                                <div class="menu-item-image">
+                                    <img src="{{ url_for('uploaded_file', filename=product.image_url) }}" alt="{{ product.name }}">
+                                    <div class="menu-item-badge">{{ product.tag1 }}</div>
+                                </div>
+                                <div class="menu-item-info">
+                                    <h3>{{ product.name }}</h3>
+                                    <p>{{ product.description }}</p>
+                                    <div class="menu-item-footer">
+                                        <span class="price">${{ product.price }}</span>
+                                        <div class="dietary-info">
+                                            {% if product.gluten_free %}
+                                                <span class="gluten-free" title="Gluten-Free"><i class="fas fa-wheat-awn-circle-exclamation"></i></span>
+                                            {% endif %}
+                                            {% if product.nut_free %}
+                                                <span class="nut-free" title="Contains Nuts"><i class="fas fa-seedling"></i></span>
+                                            {% endif %}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             {% endfor %}
-
         </section>
+
     </main>
 
     <div class="menu-overlay">
