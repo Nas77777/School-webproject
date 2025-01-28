@@ -256,10 +256,6 @@ def login():
 
 
 
-@app.route('/home', methods=['GET', 'POST'])
-def mainpage():
-    events = Events.query.all()
-    return render_template('main-page.html', events=events)
 
 if __name__ == '__main__':
     with app.app_context():
@@ -408,7 +404,7 @@ def events():
 @app.route('/logout')
 def logout():
     session.clear()
-    return redirect(url_for('home'))
+    return redirect(url_for('home_page'))
 
 icon_dictionary = {
     "appetizers": '<i class="fas fa-leaf"></i>',
