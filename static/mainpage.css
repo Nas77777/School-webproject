@@ -524,7 +524,7 @@ another way of styling the buttons in the header */
 
 /* Sustainability Journey Section */
 .sustainability-journey {
-    background: white;
+    background: var(--color-background);
     padding: 8rem 2rem;
 }
 
@@ -866,9 +866,9 @@ another way of styling the buttons in the header */
 .our-vision p{
     padding-bottom:20px;
     color:var( --color-secondary);
-    font-size:28px;
     font-family:"Montserrat";
     font-weight:400;
+    font-size:28px;
 }
 
 
@@ -983,14 +983,14 @@ another way of styling the buttons in the header */
 
 .events h2{
     color:var(--color-primary);
-    font-size:60px;
+    font-size:50px;
     font-family:"Cormorant Garamond";
     font-weight: 600;
 }
 
 .events p{
     color:var( --color-secondary);
-    font-size:28px;
+    font-size:20px;
     font-family:"Montserrat";
     font-weight:400;
     padding-bottom:50px;
@@ -1037,6 +1037,7 @@ another way of styling the buttons in the header */
     width:550px;
     height:440px;
 }
+
 
 .event-container .grey-box-1 h3, 
 .grey-box-2 h3{
@@ -1118,6 +1119,19 @@ another way of styling the buttons in the header */
     background-color:var(--color-primary);
 }
 
+/* Responsive Design (Big Screens)*/
+@media (max-width: 1500px) {
+    .event-container{
+        overflow-x: hidden;
+        flex-wrap: wrap;
+    }
+
+    .event-card-1, .event-card-2{
+       max-height: 500px;
+    }
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     /* Our Vision */
@@ -1126,44 +1140,39 @@ another way of styling the buttons in the header */
     }
 
     .our-vision p{
-        font-size: 1.4rem;
+        overflow-x: hidden !important;
+        font-size: 1.2rem !important;
+        max-width:580px ;
     }
 
-
-
     /* Chef Table */
-    .chef h2{
+    .chefs-table-section h2{
         font-size: 3rem;
     }
 
-    .chef p{
-        font-size: 1.6rem;
+    .chefs-table-section p{
+        font-size: 1.3rem;
+        max-width: 500px;
     }
 
 
-    .container-1 {
+    .chefs-table-content {
         flex-direction: column;
     }
 
-    .item-2 img {
+    .chefs-table-gallery img {
         width: 100%;
         height: auto;
     }
 
-    .container-1 .item-1 {
+    .chefs-table-content .chefs-table-info{
         order:2;
     }
 
-    .container-1 .item-1 h5{
+    .chefs-table-content .chefs-table-info h5{
         font-size: 1.5rem;;
     }
 
-    .container-1 .item-1 p{
-        position:relative;
-        right:3rem;
-        max-width: 800px;
-        font-size: 1.5rem;;
-    }
 
 
     /* Events */
@@ -1360,6 +1369,23 @@ another way of styling the buttons in the header */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     background-color:var(--color-primary);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .nav-btn {
     font-family: "Montserrat", serif;

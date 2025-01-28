@@ -20,6 +20,7 @@
 
                 </div>
                 <div class="nav-links">
+                    <a href="{{ url_for('refrences') }}">refrences</a>
                     <a href="{{ url_for('Futured_product') }}">HOME</a>
                     <a href="{{ url_for('menu') }}">MENU</a>
                     <a href="{{ url_for('about') }}">ABOUT</a>
@@ -58,32 +59,30 @@
         <div class="products-slider">
             {% if featured_products %}
                 {% for product in featured_products %}
-                    {% if loop.index0 % 6 == 0 %}
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="{{ url_for('uploaded_file', filename=product.image_url) }}" alt="{{ product.name }}">
-                            <div class="product-overlay">
-                                <span class="product-price">${{ product.price }}</span>
-                                <button class="view-details">View Details</button>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h3>{{ product.name}}</h3> 
-                            <p>{{ product.description }}</p>
-                            <div class="product-tags">
-                                <span>Gluten-Free</span>
-                                <span>Organic</span>
-                                <span> </span>
-                            </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="{{ url_for('uploaded_file', filename=product.image_url) }}" alt="{{ product.name }}">
+                        <div class="product-overlay">
+                            <span class="product-price">${{ product.price }}</span>
+                            <button class="view-details">View Details</button>
                         </div>
                     </div>
-                    {% endif %}
+                    <div class="product-info">
+                        <h3>{{ product.name}}</h3> 
+                        <p>{{ product.description }}</p>
+                        <div class="product-tags">
+                            <span>Gluten-Free</span>
+                            <span>Organic</span>
+                            <span> </span>
+                        </div>
+                    </div>
+                </div>
                 {% endfor %}
                 {% if not featured_products %}
                     <p> No products found </p>
                 {% endif %}
             {% endif %}
-            </div>
+        </div>
         
         <div class="products-nav">
             <button class="prev-btn" aria-label="Previous slide">
@@ -301,9 +300,8 @@
                 </div>
             </div>
         </section>
-    
+        
     </main>
-
 
     <!--           sustainability-journey                 -->
     <section id="sustainability-journey" class="sustainability-journey">
@@ -421,6 +419,7 @@
                     <li><a href="{{ url_for('menu') }}">Menu</a></li>
                     <li><a href="{{ url_for('contact') }}">contact</a></li>
                     <li><a href="{{ url_for('login') }}">login</a></li>
+                    <li><a href="{{ url_for('refrences') }}">refrences</a> </li>
                     <li><a href="{{ url_for('reservation') }}">Reservation</a></li>
                 </ul>
             </div>
