@@ -386,7 +386,6 @@ def confirm():
         db.session.add(reservation_submission)
         db.session.commit()
         flash("Reservation confirmed!", "success")
-        return redirect(url_for('home_page'))
     
     return render_template('reservation.html',
         reservation_date=reservation_date,
@@ -464,6 +463,8 @@ def about():
 def refrences():
 
     return render_template('Refrence.HTML')
+
+
 
 if __name__ == '__main__':
     with app.app_context():
