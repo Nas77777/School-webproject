@@ -196,7 +196,9 @@
                         <li><i class="fas fa-glass-cheers"></i> 15 different cocktails</li>
                         <li><i class="fas fa-clock"></i> 2.5 Hour Experience</li>
                     </ul>
-                    <button class="chef-button" >Inquire Now</button>
+                    <a href="{{ url_for('contact') }}">
+                    <button class="chef-button" >Inquire Now</button> 
+                    </a>
                 </div>
                 <div class="chefs-table-gallery">
                     <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Chef's Table">
@@ -226,7 +228,7 @@
 
                         <h4>2:00 PM - 5:00 PM</h4>
                         <h4>$75 per person</h4>
-                        <a href="#book"> 
+                        <a href="{{ url_for('reservation') }}"> 
                         <button class="event-button">Book Now</button></a>
                     </div>
                 </div>
@@ -248,7 +250,7 @@
 
                         <h4>2:00 PM - 5:00 PM</h4>
                         <h4>$75 per person</h4>
-                        <a href="#book"> 
+                        <a href="{{ url_for('reservation') }}"> 
                         <button class="event-button">Book Now</button></a>
                     </div>
                 </div>

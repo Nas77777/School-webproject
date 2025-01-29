@@ -244,7 +244,7 @@ def login():
             session['user_id'] = user.id
             login_user(user)
             flash("Logged in successfully!", "success")
-            return redirect(url_for('mainpage'))
+            return redirect(url_for('home_page'))
         elif user is None:
                 flash("Invalid email or password.", "danger")
                 return render_template("login.html")
@@ -386,7 +386,7 @@ def confirm():
         db.session.add(reservation_submission)
         db.session.commit()
         flash("Reservation confirmed!", "success")
-        return redirect(url_for('mainpage'))
+        return redirect(url_for('home_page'))
     
     return render_template('reservation.html',
         reservation_date=reservation_date,
