@@ -119,7 +119,9 @@
                         <span>Valet Parking</span>
                     </div>
                     <div class="location-actions">
+                    <a href="{{ url_for('reservation') }}">
                         <button class="location-btn reserve">Reserve a Table</button>
+                    </a>
                         <button class="location-btn directions">Get Directions</button>
                     </div>
                 </div>
@@ -165,7 +167,9 @@
                         <span>Terrace</span>
                     </div>
                     <div class="location-actions">
-                        <button class="location-btn reserve">Reserve a Table</button>
+                        <a href="{{ url_for('reservation') }}">
+                            <button class="location-btn reserve">Reserve a Table</button>
+                        </a>
                         <button class="location-btn directions">Get Directions</button>
                     </div>
                 </div>
