@@ -403,7 +403,7 @@ def events():
 @app.route('/logout')
 def logout():
     session.clear()
-    return redirect(url_for('home_page'))
+    return redirect(url_for('home'))
 
 icon_dictionary = {
     "appetizers": '<i class="fas fa-leaf"></i>',
@@ -414,12 +414,12 @@ icon_dictionary = {
     "beverages": '<i class="fas fa-glass-martini-alt"></i>'
 }
 
-@app.route('/staff_reservations', methods=['GET', 'POST'])
+@app.route('/staff/reservation', methods=['GET', 'POST'])
 @login_required
 def staff_reservation():
     if current_user.role != 'admin':
         flash("You do not have permission to access this page.", "danger")
-        return redirect(url_for('mainpage'))
+        return redirect(url_for('home_page'))
     
     reservations = []
     selected_date = None  
@@ -465,6 +465,10 @@ def refrences():
     return render_template('Refrence.HTML')
 
 
+@app.route('/home', methods=['GET', 'POST'])
+def home():
+
+    return render_template('main-page.html')
 
 if __name__ == '__main__':
     with app.app_context():
