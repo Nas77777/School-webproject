@@ -244,7 +244,7 @@ def login():
             session['user_id'] = user.id
             login_user(user)
             flash("Logged in successfully!", "success")
-            return redirect(url_for('home_page'))
+            return redirect(url_for('Futured_product'))
         elif user is None:
                 flash("Invalid email or password.", "danger")
                 return render_template("login.html")
