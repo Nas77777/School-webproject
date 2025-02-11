@@ -6,6 +6,7 @@
     <title>Verdant - Luxury Vegan Dining</title>
     
     <link rel="stylesheet" href="{{ url_for('static', filename='mainpage.css') }}">
+    <link rel="icon" type="image/x-icon" href="static\favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -18,9 +19,9 @@
             <nav class="navbar">
                     <span class="name"> Verdant </span>
 
-                </div>
+                </div>  
                 <div class="nav-links">
-                    <a href="{{ url_for('refrences') }}">refrences</a>
+                    <a href="{{ url_for('refrences') }}">REFRENCES</a>
                     <a href="{{ url_for('Futured_product') }}">HOME</a>
                     <a href="{{ url_for('menu') }}">MENU</a>
                     <a href="{{ url_for('about') }}">ABOUT</a>
@@ -119,7 +120,9 @@
                         <span>Valet Parking</span>
                     </div>
                     <div class="location-actions">
+                    <a href="{{ url_for('reservation') }}">
                         <button class="location-btn reserve">Reserve a Table</button>
+                    </a>
                         <button class="location-btn directions">Get Directions</button>
                     </div>
                 </div>
@@ -165,7 +168,9 @@
                         <span>Terrace</span>
                     </div>
                     <div class="location-actions">
-                        <button class="location-btn reserve">Reserve a Table</button>
+                        <a href="{{ url_for('reservation') }}">
+                            <button class="location-btn reserve">Reserve a Table</button>
+                        </a>
                         <button class="location-btn directions">Get Directions</button>
                     </div>
                 </div>
@@ -196,7 +201,9 @@
                         <li><i class="fas fa-glass-cheers"></i> 15 different cocktails</li>
                         <li><i class="fas fa-clock"></i> 2.5 Hour Experience</li>
                     </ul>
-                    <button class="chef-button" >Inquire Now</button>
+                    <a href="{{ url_for('contact') }}">
+                    <button class="chef-button" >Inquire Now</button> 
+                    </a>
                 </div>
                 <div class="chefs-table-gallery">
                     <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Chef's Table">
@@ -226,7 +233,7 @@
 
                         <h4>2:00 PM - 5:00 PM</h4>
                         <h4>$75 per person</h4>
-                        <a href="#book"> 
+                        <a href="{{ url_for('reservation') }}"> 
                         <button class="event-button">Book Now</button></a>
                     </div>
                 </div>
@@ -248,7 +255,7 @@
 
                         <h4>2:00 PM - 5:00 PM</h4>
                         <h4>$75 per person</h4>
-                        <a href="#book"> 
+                        <a href="{{ url_for('reservation') }}"> 
                         <button class="event-button">Book Now</button></a>
                     </div>
                 </div>

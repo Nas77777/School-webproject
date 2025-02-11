@@ -244,7 +244,7 @@ def login():
             session['user_id'] = user.id
             login_user(user)
             flash("Logged in successfully!", "success")
-            return redirect(url_for('mainpage'))
+            return redirect(url_for('Futured_product'))
         elif user is None:
                 flash("Invalid email or password.", "danger")
                 return render_template("login.html")
@@ -256,10 +256,6 @@ def login():
 
 
 
-@app.route('/home', methods=['GET', 'POST'])
-def mainpage():
-    events = Events.query.all()
-    return render_template('main-page.html', events=events)
 
 if __name__ == '__main__':
     with app.app_context():
@@ -390,7 +386,6 @@ def confirm():
         db.session.add(reservation_submission)
         db.session.commit()
         flash("Reservation confirmed!", "success")
-        return redirect(url_for('mainpage'))
     
     return render_template('reservation.html',
         reservation_date=reservation_date,
@@ -419,12 +414,12 @@ icon_dictionary = {
     "beverages": '<i class="fas fa-glass-martini-alt"></i>'
 }
 
-@app.route('/staff_reservations', methods=['GET', 'POST'])
+@app.route('/staff/reservation', methods=['GET', 'POST'])
 @login_required
 def staff_reservation():
     if current_user.role != 'admin':
         flash("You do not have permission to access this page.", "danger")
-        return redirect(url_for('mainpage'))
+        return redirect(url_for('home_page'))
     
     reservations = []
     selected_date = None  
@@ -468,6 +463,12 @@ def about():
 def refrences():
 
     return render_template('Refrence.HTML')
+
+
+@app.route('/home', methods=['GET', 'POST'])
+def home():
+
+    return render_template('main-page.html')
 
 if __name__ == '__main__':
     with app.app_context():
