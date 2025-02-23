@@ -591,3 +591,68 @@ body {
     border: 1px solid #e0e0e0;
     padding: 20px;
 }
+
+/* step 5 section */
+
+.step-5-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-bg);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffff;
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+}
+.step-5-title {
+    display: flex;
+    font-weight: bold;
+    padding-left: 70px;
+}
+.step-5-icons {
+    border:#C69455 solid ;
+    background-color: #C69455;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    height: 50px;
+    width: 50px;
+    font-size: 32px;
+    border-radius: 15px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    display: flex;
+}
+.step-5-text {
+    display: flex;
+    font-size: 15px;
+    font-weight: 1;
+    padding-left: 70px;
+    text-decoration: underline;
+}
+.step-5-Dietary-Preferences {
+    border:#C69455 solid ;
+    background-color: #C69455;
+    position: relative;
+    align-items: center;
+    justify-content: left !important;;
+    height: 25px;
+    width: 115px;
+    font-size: 15px;
+    border-radius: 15px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    display: flex;
+}
+.Step-5-Summary {
+    margin-left: 400px;
+    margin-bottom: 400px;
+    position: sticky!important;
+}
