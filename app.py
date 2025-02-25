@@ -219,7 +219,7 @@ def sign_up():
                 return render_template("signup.html", error=error)
 
             new_user = User(email=email, password_hash=hashed_password, name=user, phone=phone)
-
+            
             db.session.add(new_user)
             db.session.commit()
             return redirect(url_for('login'))
