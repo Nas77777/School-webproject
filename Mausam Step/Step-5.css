@@ -597,6 +597,8 @@ body {
 .step-5-content{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 100%;
     background-color: var(--color-bg);
@@ -612,9 +614,13 @@ body {
     padding: 20px;
 }
 .step-5-title {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     display: flex;
     font-weight: bold;
-    padding-left: 70px;
+    padding-left: 45px;
+
 }
 .step-5-icons {
     border:#C69455 solid ;
@@ -627,32 +633,48 @@ body {
     font-size: 32px;
     border-radius: 15px;
     padding-bottom: 5px;
-    padding-left: 5px;
+    margin-right: 300px;
     display: flex;
 }
-.step-5-text {
-    display: flex;
-    font-size: 15px;
-    font-weight: 1;
-    padding-left: 70px;
-    text-decoration: underline;
-}
-.step-5-Dietary-Preferences {
-    border:#C69455 solid ;
-    background-color: #C69455;
-    position: relative;
+table {
+    text-align: center;
     align-items: center;
-    justify-content: left !important;;
-    height: 25px;
-    width: 115px;
-    font-size: 15px;
-    border-radius: 15px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    display: flex;
+    justify-content: center;
+    display: grid;
+    border-collapse: collapse;
+    float: right;
+    margin-left: 200px;
 }
-.Step-5-Summary {
-    margin-left: 400px;
-    margin-bottom: 400px;
-    position: sticky!important;
+td {
+    text-decoration: underline;
+    padding-right: 110px;
+    font-size: 15px;
+    font-weight: 400px;
+    text-align: inherit;
+}
+.step-5-Preferences{
+    color: white;
+    background-color: #C69455;
+    border-radius: 5px;
+    margin-right: 60px;
+}
+.step-5-text{
+    text-align: center;
+    font-weight: 200;
+    font-size: 15px;
+    padding-left: 50px;
+}
+.step-5-summary{
+    display: flex;
+    position: sticky;
+    align-items: start;
+    text-align: right;
+}
+.step-5-button{
+    background-color: #C69455;
+    border-radius: 8px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
 }
