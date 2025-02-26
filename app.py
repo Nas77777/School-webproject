@@ -439,7 +439,7 @@ def staff_reservation():
                 user = User.query.get(reservation.user_id)  
                 reservations_details.append({
                     "id": reservation.id,
-                    "user_name": user.name if user else "N/A",  
+                    "user_name": user.name if user else "N/A",
                     "number_of_guests": reservation.number_of_guests,
                     "special_requests": reservation.special_requests,
                     "start_time": reservation.availability.formatted_start_time,
