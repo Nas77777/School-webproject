@@ -595,7 +595,7 @@ body {
 /* STEP-2 */
 
 
-/* I don't know what happend to the white box so I make this */
+/* I don't know what happend to the white box so I make this + it was causing bugs */
 .step-content-wrapper{
     background-color: white;
     border-radius: 20px;
@@ -610,7 +610,6 @@ body {
     font-weight: 400;
     text-align: center;
     color: #2C4A3C;
-    font-family: "Helvetica Neue";
     font-size: 16px;
 }
 
@@ -652,7 +651,6 @@ body {
 
 .stp-2-title h2,
 .stp-2-title .box-right-text h4 {
-    font-family: "Helvetica Neue";
     display: inline-block;
     font-size: 16px;
 }
@@ -682,7 +680,7 @@ body {
 .text-title h2,
 .text-title-1 h2,
 .text-title-2 h2{
-    padding-right: 100px;
+    padding-right: 80px;
     color: #2C4A3C;
     font-size: 21px;
 }
@@ -693,7 +691,7 @@ body {
 }
 
 .text-title-2 h2{
-    padding-right: 130px;
+    padding-right: 110px;
 }
 
 .stp-2-icon {
@@ -711,7 +709,6 @@ body {
 
 .step-2-btn {
     font-weight: bold;
-    font-family: "Montserrat";
     padding: 0.4rem 0.7rem;
     background-color: var(--color-accent);
     color: #FCF9F2;
@@ -723,10 +720,7 @@ body {
     transition: all 0.3s ease;
     cursor: pointer;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding:10px 40px 10px 40px;
 }
 
 .stp-2-box-btn {
@@ -739,8 +733,14 @@ body {
     transform: translateY(-3px);
 }
 
-.mdp-responsive-stp-2{
-    display:none;
+.mdp-responsive-stp-2 {
+    display: none;
+    height: 100px;
+}
+
+.mdp-stp-2 {
+    display: block;
+    height: 330px;
 }
 
 /* Responsive Design */
@@ -756,13 +756,90 @@ body {
     }
 }
 
-@media (max-width: 1500px) {
-    .mdp-responsive-stp-2{
-        display:inline !important;
+@media (max-width: 480px) {
+    .step-content-wrapper{
+        padding-bottom:10px;
+    }
+    
+    .stp-2-flex-cont {
+        flex-direction: column;
+        gap: 20px; 
     }
 
-    .mdp-stp-2{
-        display:none !important;
+    .stp-2-image {
+        width: 340px;
+        height: 200px; 
+        border-radius: 10px 10px 0 0;
+        position:relative;
+        top:20px;
+    }
+
+    .stp-2-box {
+        width: 320px;
+        height: 360px;
+        padding: 10px;
+    }
+    
+    .stp-2-h2{
+        font-size:14px;
+    }
+
+    .stp-2-list li {
+        font-size: 14px;
+    }
+    
+    .stp-2-list p {
+        font-size: 12px; 
+        padding-left: 43px;
+    }
+
+    .step-2-btn {
+        font-size: 15px;
+        padding: 10px 15px; 
+    }
+
+    .stp-2-box-btn {
+        margin-left: 60px;
+        top: 8px; 
+    }
+    
+    .stp-2-image h2, h3{
+        display:none;
+    }
+    
+    .text-title h2,
+    .text-title-1 h2,
+    .text-title-2 h2{
+        padding-right:40px;
+        font-size:17px;
+        white-space: nowrap;
+    }
+    
+    .text-title-1{
+        padding-right:100px;
+    }
+    
+    .text-title-2{
+        padding-right:30px;
+    }
+    
+    .stp-2-box .box-right-text h4{
+        font-size:10px;
+    }
+
+}
+
+@media (max-width: 1500px) {
+    .step-content-wrapper{
+        padding-bottom:20px;
+    }
+
+    .mdp-responsive-stp-2 {
+        display: block;
+    }
+    
+    .mdp-stp-2 {
+        display: none;
     }
 }
 
