@@ -592,269 +592,210 @@ body {
     padding: 20px;
 }
 
-/* STEP-2 */
 
 
-/* I don't know what happend to the white box so I make this + it was causing bugs */
-.step-content-wrapper{
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Outer Container */
+.details-container {
     background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    margin: auto;
-    max-width: 1200px;
-    border: 1px solid #e0e0e0;
-    padding-bottom:400px;
-}
-
-.stp-2-h2 {
-    font-weight: 400;
-    text-align: center;
-    color: #2C4A3C;
-    font-size: 16px;
-}
-
-.stp-2-flex-cont {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 60px;
+    align-items: flex-start;
+    gap: 30px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.stp-2-flex-cont:hover {
-    transform: translateY(-5px);
-    transition: all 0.3s ease;
+/* Left Side */
+.form-section {
+    flex: 2;
 }
 
-.stp-2-image {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    height: 440px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 20px 0 0 20px;
+/* Guest Information Styling */
+.details-step {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for better spacing */
 }
 
-.stp-2-image h2, h3 {
-    padding-left: 15px;
-    color: white;
-    font-size: 16px;
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-.stp-2-box {
-    background-color: #fff;
-    width: 450px;
-    height: 440px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-.stp-2-title h2,
-.stp-2-title .box-right-text h4 {
-    display: inline-block;
-    font-size: 16px;
-}
-
-.box-right-text {
-    font-size: 13px;
-    text-align: end;
-    color: var(--color-accent);
-    padding: 7px;
-    border-radius: 40px;
-    background-color: #c6935548;
-}
-
-.stp-2-list li {
-    color: #2C4A3C;
+.form-group label {
     font-weight: bold;
-    list-style-type: none;
-    font-size: 16px;
+    margin-bottom: 5px;
 }
 
-.stp-2-icon span {
-    background-color: #c6935548;
-    padding: 7px;
-    border-radius: 12px;
-}
-
-.text-title h2,
-.text-title-1 h2,
-.text-title-2 h2{
-    padding-right: 80px;
-    color: #2C4A3C;
-    font-size: 21px;
-}
-
-.text-title-1 h2{
-    padding-right: 220px;
-
-}
-
-.text-title-2 h2{
-    padding-right: 110px;
-}
-
-.stp-2-icon {
-    position: relative;
-    top: 10px;
-    padding-right: 12px;
-}
-
-.stp-2-list p {
-    position: relative;
-    bottom: 8px;
-    padding-left: 50px;
+.form-group input,
+.form-group select,
+.details-step textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 14px;
 }
 
-.step-2-btn {
-    font-weight: bold;
-    padding: 0.4rem 0.7rem;
-    background-color: var(--color-accent);
-    color: #FCF9F2;
-    border: none;
-    text-align: center;
+.details-step textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* Special Requests Placeholder */
+.details-step textarea::placeholder {
+    color: #999;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Dietary Preferences Section */
+.dietary-preferences {
+    margin-top: 20px;
+    margin-bottom: 50px; /* Increased space before special requests */
+}
+
+.dietary-preferences h3 {
     font-size: 18px;
-    margin: 3px 2px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    padding:10px 40px 10px 40px;
+    font-weight: bold;
+    color: #4A6651;
+    margin-bottom: 10px; /* Increased space below heading */
 }
 
-.stp-2-box-btn {
-    margin-left: 60px;
-    position: relative;
-    top: 12px;
+.dietary-preferences p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
 }
 
-.step-2-btn:hover {
-    transform: translateY(-3px);
+.preferences-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 15px 40px; /* Increased spacing */
 }
 
-.mdp-responsive-stp-2 {
-    display: none;
-    height: 100px;
+.diet-option label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #333;
 }
 
-.mdp-stp-2 {
-    display: block;
-    height: 330px;
+.diet-option input {
+    width: 16px;
+    height: 16px;
 }
 
-/* Responsive Design */
+/* Increased Space Before Special Requests */
+.special-requests {
+    margin-top: 50px; /* More spacing */
+}
+
+.reservation-summary {
+    flex: 1;
+    background: white; /* Change this to white */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: none
+}
+
+/* Ensure table itself is also white */
+.reservation-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white; /* Explicitly set table background to white */
+}
+
+/* Optional: Fix table row styling if needed */
+.reservation-summary tr {
+    border-bottom: 1px solid #ddd;
+    background: white; /* Make sure rows don't inherit gray */
+}
+
+.reservation-summary td {
+    padding: 15px 10px;
+    font-size: 16px;
+    color: #333;
+    background: white; /* Ensure individual cells are white */
+}
+
+
+.reservation-summary h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.reservation-summary table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+
+
+
+
+.reservation-summary td .icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Improve alignment */
+.reservation-summary td:first-child {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #666;
+}
+
+.reservation-summary td:last-child {
+    font-weight: bold;
+    text-align: right;
+    color: #2d4739;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .stp-2-flex-cont{
+    .details-container {
         flex-direction: column;
     }
 
-    .stp-2-image{
-        border-radius: 20px 20px 0 0;
-        width: 450px;
-        height: 240px;
-    }
-}
-
-@media (max-width: 480px) {
-    .step-content-wrapper{
-        padding-bottom:10px;
-    }
-    
-    .stp-2-flex-cont {
+    .form-row {
         flex-direction: column;
-        gap: 20px; 
+        gap: 15px;
     }
 
-    .stp-2-image {
-        width: 340px;
-        height: 200px; 
-        border-radius: 10px 10px 0 0;
-        position:relative;
-        top:20px;
-    }
-
-    .stp-2-box {
-        width: 320px;
-        height: 360px;
-        padding: 10px;
-    }
-    
-    .stp-2-h2{
-        font-size:14px;
-    }
-
-    .stp-2-list li {
-        font-size: 14px;
-    }
-    
-    .stp-2-list p {
-        font-size: 12px; 
-        padding-left: 43px;
-    }
-
-    .step-2-btn {
-        font-size: 15px;
-        padding: 10px 15px; 
-    }
-
-    .stp-2-box-btn {
-        margin-left: 60px;
-        top: 8px; 
-    }
-    
-    .stp-2-image h2, h3{
-        display:none;
-    }
-    
-    .text-title h2,
-    .text-title-1 h2,
-    .text-title-2 h2{
-        padding-right:40px;
-        font-size:17px;
-        white-space: nowrap;
-    }
-    
-    .text-title-1{
-        padding-right:100px;
-    }
-    
-    .text-title-2{
-        padding-right:30px;
-    }
-    
-    .stp-2-box .box-right-text h4{
-        font-size:10px;
-    }
-
-}
-
-@media (max-width: 1500px) {
-    .step-content-wrapper{
-        padding-bottom:20px;
-    }
-
-    .mdp-responsive-stp-2 {
-        display: block;
-    }
-    
-    .mdp-stp-2 {
-        display: none;
+    .reservation-summary {
+        position: relative;
+        top: unset;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
