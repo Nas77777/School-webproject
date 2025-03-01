@@ -17,7 +17,6 @@ from wtforms.validators import DataRequired, Email, Length, EqualTo
 from flask_admin.form import ImageUploadField
 
 
-
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = os.path.join(os.path.dirname(__file__), 'static/uploads')
 app.config['ALLOWED_EXTENSIONS'] = {'png', 'jpg', 'jpeg', 'gif'}
@@ -134,6 +133,7 @@ class AvailabilityView(ModelView):
         'start_time': lambda v, c, m, p: m.formatted_start_time,
         'end_time': lambda v, c, m, p: m.formatted_end_time,
     }
+
 class AdminMixin:
     def is_accessible(self):
         return current_user.is_authenticated and current_user.role == 'admin'
@@ -188,9 +188,6 @@ def Futured_product():
     featured_products = MenuItem.query.filter_by(is_featured=1).all()
     regular_products = MenuItem.query.filter_by(is_featured=0).all()
     return render_template('main-page.html', featured_products=featured_products, regular_products=regular_products)
-
-
-
 
 
 @app.route('/sign_up', methods=['GET', 'POST'])
