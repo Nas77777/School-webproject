@@ -681,12 +681,12 @@ body {
       td{
         padding: 20px;
       }
-      .text-container {
+      .step-5-text-container {
         display: inline-block;
         position: relative;
     }
 
-    .text-container::after {
+    .step-5-text-container::after {
         content: "";
         display: block;
         width: 100%;
@@ -696,3 +696,4 @@ body {
         left: 0;
         bottom: -5px; /* Space between the text and the line */
     }
+/*praying i can push this out and it work*/ 
