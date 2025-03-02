@@ -906,11 +906,15 @@ body {
 
     .style-p-tag{
         font-size:12px; 
-        padding:0 0 0 110px;
+        padding:0 0 0 105px;
     }
 
     .style-p-tag-responsive{
-        font-size:16px;
+        font-size:12px;
+    }
+
+    .stp-1-cont-2{
+        padding-bottom:50px;
     }
 
     .stp-1-price-cont{
@@ -926,8 +930,8 @@ body {
 
     .stp-1-price-cont-responsive{
         width:20%;
-        bottom:82px;
-        left:24.5rem;
+        bottom:72px;
+        left:23.5rem;
     }
 
 @media (max-width: 350px) {
