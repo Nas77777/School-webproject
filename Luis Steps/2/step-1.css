@@ -592,269 +592,402 @@ body {
     padding: 20px;
 }
 
-/* STEP-2 */
 
 
-/* I don't know what happend to the white box so I make this + it was causing bugs */
+
+
+
+
+
+
+
+
+
+/* STEP-1 */
+
+/* There where some bug with the white box so I make this */
 .step-content-wrapper{
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     margin: auto;
-    max-width: 1200px;
+    max-width: 1240px;
     border: 1px solid #e0e0e0;
-    padding-bottom:400px;
 }
 
-.stp-2-h2 {
+.space-responsive{
+    padding-bottom:200px;
+}
+
+.stp-1-title{
     font-weight: 400;
-    text-align: center;
-    color: #2C4A3C;
-    font-size: 16px;
+    padding-bottom:20px;
+    font-size: 20px;
+    color:#2C4A3C;
 }
 
-.stp-2-flex-cont {
+.stp-1-flex-cont {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-bottom: 60px;
+    gap: 50px;
 }
 
-.stp-2-flex-cont:hover {
+.stp-1-flex-items:hover {
     transform: translateY(-5px);
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.stp-2-image {
+.stp-1-flex-images img {
+    width: 550px;
+    border-radius: 23px 23px 0 0;
+}
+
+.stp-1-flex-items {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    height: 440px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 20px 0 0 20px;
+    font-weight: 300;
+    font-family: "Montserrat";
 }
 
-.stp-2-image h2, h3 {
-    padding-left: 15px;
-    color: white;
-    font-size: 16px;
-}
-
-.stp-2-box {
-    background-color: #fff;
-    width: 450px;
-    height: 440px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.stp-2-title h2,
-.stp-2-title .box-right-text h4 {
-    display: inline-block;
-    font-size: 16px;
-}
-
-.box-right-text {
-    font-size: 13px;
-    text-align: end;
-    color: var(--color-accent);
-    padding: 7px;
-    border-radius: 40px;
-    background-color: #c6935548;
-}
-
-.stp-2-list li {
+.stp-1-flex-items h1 {
+    font-size: 26px;
+    padding:15px 0 0 40px;
     color: #2C4A3C;
-    font-weight: bold;
+}
+
+.stp-1-flex-items p {
+    position:relative;
+    bottom:10px;
+    padding:0 0 5px 42px;
+    font-size: 17px;
+}
+
+.stp-1-flex-items li {
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+.stp-1-flex-items ul {
     list-style-type: none;
-    font-size: 16px;
+    padding-left: 40px;
 }
 
-.stp-2-icon span {
-    background-color: #c6935548;
-    padding: 7px;
-    border-radius: 12px;
-}
-
-.text-title h2,
-.text-title-1 h2,
-.text-title-2 h2{
-    padding-right: 80px;
-    color: #2C4A3C;
-    font-size: 21px;
-}
-
-.text-title-1 h2{
-    padding-right: 220px;
-
-}
-
-.text-title-2 h2{
-    padding-right: 110px;
-}
-
-.stp-2-icon {
+.stp-1-flex-box {
     position: relative;
-    top: 10px;
-    padding-right: 12px;
+    bottom: 40px;
+    padding-bottom: 20px;
+    background-color: white;
+    width:550px;
 }
 
-.stp-2-list p {
-    position: relative;
-    bottom: 8px;
-    padding-left: 50px;
-    font-size: 14px;
+.stp-1-inline h2, h3{
+    display:inline;
 }
 
-.step-2-btn {
+.stp-1-price-change{
+    position:relative;
+    top:10px;
+    padding:0 0 0 180px;
+    font-size:19px;
+    color:var(--color-accent)
+}
+
+.stp-1-btn{
     font-weight: bold;
-    padding: 0.4rem 0.7rem;
     background-color: var(--color-accent);
     color: #FCF9F2;
     border: none;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     margin: 3px 2px;
     border-radius: 8px;
     transition: all 0.3s ease;
     cursor: pointer;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    padding:10px 40px 10px 40px;
+    padding:15px 130px 15px 130px;
 }
 
-.stp-2-box-btn {
-    margin-left: 60px;
+.stp-1-box-btn {
+    margin-left: 30px;
     position: relative;
-    top: 12px;
+    top: 20px;
 }
 
-.step-2-btn:hover {
+.stp-1-btn:hover {
+    cursor: pointer;
     transform: translateY(-3px);
 }
 
-.mdp-responsive-stp-2 {
-    display: none;
-    height: 100px;
+
+
+
+/* Enhance Experience */
+.stp-1-title-2{
+    padding:80px 0 50px 0;
+    font-size: 16px;
+    color:#2C4A3C;
+    font-weight: 400;
+    position:relative;
+    right:400px;
 }
 
-.mdp-stp-2 {
-    display: block;
-    height: 330px;
+.stp-1-cont-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:50px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .stp-2-flex-cont{
-        flex-direction: column;
+.stp-1-item{
+    background-color:white;
+    border-radius: 12px;
+}
+
+.stp-1-box-2{
+    height:6rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width:70rem;
+}
+
+.stp-1-box-2:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-accent);
+    cursor: pointer;
+    
+}
+
+.stp-1-icons-1{
+    position:relative;
+    top:15px;
+    font-size:32px;
+    padding:20px 20px 0 35px;
+}
+
+.stp-1-inline-box h3, h2{
+    display: inline;
+}
+
+.stp-1-inline-box h2{
+    font-size:18px;
+    color:#2C4A3C;
+}
+
+.style-p-tag{
+    font-size:18px; 
+    padding:0 0 0 110px;
+    margin-top:0;
+}
+
+.stp-1-price-cont{
+    padding:0 20px 20px 0;
+    width:15%;
+    position: relative;
+    bottom:57px;
+    left:57rem;
+    
+}
+
+.stp-1-price-change-2{
+    font-size: 19px;
+    color: var(--color-accent);
+    padding-right: 7px;
+}
+
+.style-left-text{
+    font-size:13px;
+    padding-left:5px;
+    position:relative;
+    bottom:6px; 
+}
+
+
+
+
+
+
+@media (max-width: 780px) {
+
+    /* Echanting Experience */
+
+    .stp-1-title-2{
+        right:0px;
     }
 
-    .stp-2-image{
-        border-radius: 20px 20px 0 0;
-        width: 450px;
-        height: 240px;
+    .stp-1-box-2{
+        height:6rem;
+        width:40rem;
+    }
+
+    .stp-1-icons-1{
+        font-size:30px;
+    }
+
+    .stp-1-inline-box h2{
+        font-size:18px;
+    }
+
+    .style-p-tag{
+        font-size:16px; 
+        padding:0 0 0 105px;
+    }
+
+    .style-p-tag-responsive{
+        width:50%;
+        font-size:16px;
+    }
+
+    .stp-1-price-cont{
+        width:80%;
+        bottom:50px;
+        left:28.6rem;
+    }
+
+    .stp-1-price-change-2{
+        font-size: 19px;
+        padding-right: 7px;
+    }
+
+    .stp-1-price-cont-responsive{
+        bottom:70px;
+    }
+
+    .stp-1-cont-2{
+        overflow-x: hidden;
     }
 }
 
 @media (max-width: 480px) {
-    .step-content-wrapper{
-        padding-bottom:10px;
-    }
-    
-    .stp-2-flex-cont {
-        flex-direction: column;
-        gap: 20px; 
+    .stp-1-flex-images img {
+        width: 400px;
     }
 
-    .stp-2-image {
-        width: 340px;
-        height: 200px; 
-        border-radius: 10px 10px 0 0;
-        position:relative;
-        top:20px;
+    .stp-1-flex-box {
+        width:400px;
     }
 
-    .stp-2-box {
-        width: 320px;
-        height: 360px;
-        padding: 10px;
-    }
-    
-    .stp-2-h2{
-        font-size:14px;
+    .stp-1-box-btn {
+        margin-left: 15px;
+        top: 20px;
     }
 
-    .stp-2-list li {
-        font-size: 14px;
-    }
-    
-    .stp-2-list p {
-        font-size: 12px; 
-        padding-left: 43px;
+    .stp-1-btn{
+        font-size: 15PX;
+        padding:15px 100px 15px 100px;
     }
 
-    .step-2-btn {
-        font-size: 15px;
-        padding: 10px 15px; 
+    .stp-1-price-change{
+        padding:0 0 0 130px;
     }
 
-    .stp-2-box-btn {
-        margin-left: 60px;
-        top: 8px; 
-    }
-    
-    .stp-2-image h2, h3{
-        display:none;
-    }
-    
-    .text-title h2,
-    .text-title-1 h2,
-    .text-title-2 h2{
-        padding-right:40px;
-        font-size:17px;
-        white-space: nowrap;
-    }
-    
-    .text-title-1{
-        padding-right:100px;
-    }
-    
-    .text-title-2{
-        padding-right:30px;
-    }
-    
-    .stp-2-box .box-right-text h4{
-        font-size:10px;
+    /* Echanting Experience */
+
+    .stp-1-title-2{
+        right:0px;
     }
 
-}
-
-@media (max-width: 1500px) {
-    .step-content-wrapper{
-        padding-bottom:20px;
+    .stp-1-box-2{
+        height:6rem;
+        width:30rem;
     }
 
-    .mdp-responsive-stp-2 {
-        display: block;
+    .stp-1-icons-1{
+        font-size:28px;
     }
-    
-    .mdp-stp-2 {
+
+    .stp-1-inline-box h2{
+        font-size:16px;
+    }
+
+    .style-p-tag{
+        font-size:12px; 
+        padding:0 0 0 110px;
+    }
+
+    .style-p-tag-responsive{
+        font-size:16px;
+    }
+
+    .stp-1-price-cont{
+        width:20%;
+        bottom:50px;
+        left:24rem;
+    }
+
+    .stp-1-price-change-2{
+        font-size: 19px;
+        padding-right: 7px;
+    }
+
+    .stp-1-price-cont-responsive{
+        width:20%;
+        bottom:82px;
+        left:24.5rem;
+    }
+
+@media (max-width: 350px) {
+
+    .stp-1-flex-images img {
+        width: 350px;
+    }
+
+    .stp-1-flex-box {
+        width:350px;
+    }
+
+    .stp-1-box-btn {
+        margin-left: 19px;
+        position: relative;
+        top: 20px;
+    }
+
+    .stp-1-btn{
+        font-size: 14PX;
+        padding:15px 70px 15px 70px;
+    }
+
+    .space-responsive{
+        padding-bottom: 20px;
+    }
+
+    .stp-1-price-change{
+        padding:0 0 0 100px;
+    }
+
+    /* Echanting Experience */
+    .stp-1-title-2{
+        right:0px;
+    }
+
+    .stp-1-box-2{
+        height:6.5rem;
+        width:22.5rem;
+    }
+
+    .stp-1-icons-1{
+        font-size:28px;
+    }
+
+    .stp-1-inline-box h2{
+        font-size:16px;
+    }
+
+    .style-p-tag{
+        font-size:13px; 
+        padding:0 0 0 100px;
+    }
+
+    .style-p-tag-responsive{
+        font-size:13px;
+    }
+
+    .stp-1-price-cont{
         display: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
