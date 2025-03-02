@@ -626,6 +626,10 @@ body {
     flex: 2;
 }
 
+.form-section h2 {
+    color: #2C4A3C;
+}
+
 /* Guest Information Styling */
 .details-step {
     display: flex;
@@ -749,6 +753,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 15px;
+    color:#2C4A3C
 }
 
 .reservation-summary table {
