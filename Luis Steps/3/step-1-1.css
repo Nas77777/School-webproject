@@ -604,8 +604,6 @@ body {
 
 
 /* STEP-1 */
-
-/* There where some bug with the white box so I make this */
 .step-content-wrapper{
     background-color: white;
     border-radius: 20px;
@@ -616,70 +614,115 @@ body {
     font-family:'Inter', sans-serif;
 }
 
-.step-1-h2{
-    font-weight: 400;
-    padding-bottom:20px;
-    font-size: 20px;
+.space-responsive{
+    padding-bottom: 150px;
+}
+
+.stp-1-title h2{
     color:#2C4A3C;
+    font-size: 28px;
 }
 
-
-.flex-container {
+.stp-1-2-flex-cont{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
-    gap: 50px;
+    gap:3rem;
+    flex-wrap: wrap;
 }
 
-.flex-items:hover {
+ .flex-cont-box:hover{
     transform: translateY(-5px);
     transition: all 0.3s ease;
-}
-
-.flex-image img {
-    width: 350px;
-    border-radius: 25px 25px 0 0;
-}
-
-.flex-items {
+    border: 2px solid var(--color-accent);
+    cursor: pointer;
+    border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 15px 15px 0 0;
-    font-weight: 300;
-    font-family: "Montserrat";
+} 
+
+.flex-cont-box{
+    border-radius: 15px;
+    width:300px;
+    height:37rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-.flex-items h1 {
-    padding-left: 20px;
-    padding-top: 15px;
-    font-size: 26px;
-    color: #2C4A3C;
+.inline-text-plan h2, h3{
+    display: inline;
 }
 
-.flex-items li {
-    padding-bottom: 15px;
-    font-size: 18px;
+.text-style-1{
+    color:#2C4A3C; 
+    font-size: 30px; 
+    padding-top:20px;
 }
 
-.flex-items ul {
-    list-style-type: none;
-    padding-left: 20px;
+.price-change-plan{
+    padding-right:10px;
+    color:#2C4A3C;
+    font-size: 29px;
 }
 
-.flex-box {
+.icon-checkmark{
+    color:var(--color-accent);
+    font-size: 23px;
+}
+
+.stp-li-cont li{
+    color:var(--color-primary);
+    font-size: 19px;
+    padding:10px 0 10px 0;
+}
+
+.stp-li-cont{
+    padding-top:20px;
+    list-style: none;
+    text-align: left;
+}
+
+.right-text-plan{
+    display: inline-block;
+    background-color: #c69455;
+    border-radius: 40px;
+    margin-left:150px;
     position: relative;
-    bottom: 40px;
+    top:27px;
+}
+
+.right-text-plan h4{
+    color: white;
+    font-size: 16px;
+    padding:10px 17px 10px 17px;
+    margin:0;
+}
+
+.text-below-plan {
+    font-size: 16px;
+    color:var(--color-accent);
+    letter-spacing:2px;
+}
+
+.plan-title-cont{
     padding-bottom: 20px;
 }
 
-.step-1-btn {
+.text-style-1-2{
+    color:#2C4A3C; 
+    font-size: 30px; 
+    padding-top:20px;
+    margin-bottom:-8px;
+}
+
+.stp-1-1-btn{
     font-weight: bold;
     background-color: var(--color-accent);
     color: #FCF9F2;
     border: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     margin: 3px 2px;
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -688,28 +731,90 @@ body {
     padding:15px 60px 15px 60px;
 }
 
-.box-btn {
-    margin-left: 23px;
+.stp-1-1-box-btn{
     position: relative;
     top: 20px;
 }
 
-.step-1-btn:hover {
+.stp-1-1-btn:hover {
+    cursor: pointer;
     transform: translateY(-3px);
 }
 
 
+/* Event Enhance */
+.event-enhance-flex-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:4rem;
+    flex-wrap: wrap;
+}
+
+.event-enhance-flex-item{
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.event-enhance-flex-item:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+} 
+
+.event-enhance-box{
+    width: 370px;
+    height:210px;
+    border-radius: 25px;
+}
+
+.rectangle-left{
+    border: 3px solid var(--color-accent);
+    border-radius: 10px;
+    padding:1px 8px 1px 12px;
+    margin:26px;
+    position:relative;
+    top:24px;
+}
+
+.text-box-title{
+    color:#2C4A3C;
+    padding-left:73px;
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.event-enhance-box p{
+    margin-top: 0px;
+    padding-left: 73px;
+    padding-bottom: 10px;
+}
+
+.box-border-tag{
+    border: 2px solid var(--color-accent);
+    border-radius: 20px;
+    padding:5px;
+    font-size: 12px;
+}
+
+.event-enhance-box h4{
+    color:var(--color-accent);
+}
 
 
 
+@media (max-width: 780px) {
+    .step-content-wrapper{
+        overflow-x: hidden;
+        padding-bottom:100px;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 480px) {
+    .step-content-wrapper{
+        overflow-x: hidden;
+        padding-bottom:5px;
+    }
+}

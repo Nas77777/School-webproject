@@ -613,6 +613,7 @@ body {
     margin: auto;
     max-width: 1240px;
     border: 1px solid #e0e0e0;
+    font-family:'Inter', sans-serif;
 }
 
 .space-responsive{
@@ -649,7 +650,6 @@ body {
 .stp-1-flex-items {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     font-weight: 300;
-    font-family: "Montserrat";
 }
 
 .stp-1-flex-items h1 {
@@ -679,7 +679,6 @@ body {
     position: relative;
     bottom: 40px;
     padding-bottom: 20px;
-    background-color: white;
     width:550px;
 }
 
@@ -933,8 +932,13 @@ body {
         bottom:72px;
         left:23.5rem;
     }
+}
 
 @media (max-width: 350px) {
+    .stp-1-title h2,
+    .stp-1-title-2 h2{
+        font-size: 21px;
+    }
 
     .stp-1-flex-images img {
         width: 350px;
@@ -993,5 +997,4 @@ body {
     .stp-1-price-cont{
         display: none;
     }
-}
 }
