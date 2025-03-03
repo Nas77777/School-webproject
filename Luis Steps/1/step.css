@@ -613,6 +613,7 @@ body {
     margin: auto;
     max-width: 1200px;
     border: 1px solid #e0e0e0;
+    font-family:'Inter', sans-serif;
 }
 
 .step-1-h2{
@@ -670,7 +671,6 @@ body {
     position: relative;
     bottom: 40px;
     padding-bottom: 20px;
-    background-color: white;
 }
 
 .step-1-btn {

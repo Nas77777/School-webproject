@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Progress Steps</title>
+    <link rel="stylesheet" href="step-1-1.css">
+</head>
+<body>
+    <div class="progress-wrapper">
+        <!-- Desktop Progress -->
+                <div class="progress-steps">
+                    <button class="step-btn active" data-step="1">
+                        <span class="step-number">1</span>
+                        <div class="step-info">
+                            <h3>Location</h3>
+                            <p>Choose Location</p>
+                        </div>
+                    </button>
+
+                    <button class="step-btn" data-step="2">
+                        <span class="step-number">2</span>
+                        <div class="step-info">
+                            <h3>Dining Area </h3>
+                            <p>Select Your Dining Area</p>
+                        </div>
+                    </button>
+
+                    <button class="step-btn" data-step="3">
+                        <span class="step-number">3</span>
+                        <div class="step-info">
+                            <h3>Date & Time</h3>
+                            <p>Select Date & Time</p>
+                        </div>
+                    </button>
+
+                    <button class="step-btn" data-step="4">
+                        <span class="step-number">4</span>
+                        <div class="step-info">
+                            <h3>Details</h3>
+                            <p>Confirmation</p>
+                        </div>
+                    </button>
+
+                    <button class="step-btn" data-step="5">
+                        <span class="step-number">5</span>
+                        <div class="step-info">
+                            <h3>Complete</h3>
+                            <p>Confirmation</p>
+                        </div>
+                    </button>
+
+
+                    <div class="progress-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Progress -->
+        <div class="mobile-progress">
+            <div class="mobile-header">
+                <div class="current-info">
+                    <span class="step-count">Step <span class="current">1</span> of 5</span>
+                    <h2 class="current-title">Select Type</h2>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" data-progress="20%"></div>
+                </div>
+                <div class="step-dots">
+                    <span class="dot active" data-step="1"></span>
+                    <span class="dot" data-step="2"></span>
+                    <span class="dot" data-step="3"></span>
+                    <span class="dot" data-step="4"></span>
+                    <span class="dot" data-step="5"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <section class="step-section active space-responsive" data-step="1">
+            <div class="step-content-wrapper">
+                <div class="step-content">
+                    <span class="stp-1-title"><h2>Select Your Package</h2></span>
+                    <div class="stp-1-2-flex-cont">
+
+
+                        <!-- Essential -->
+                        <div class="stp-1-2-item">
+                            <div class="flex-cont-box">
+                                <span>
+                                    <h2 class="text-style-1">Essential</h2>
+                
+                                    <span class="inline-text-plan">
+                                        <span class="price-change-plan"><h2>$75</h2></span>
+                                        <span style="font-size: 14px; color:#808080;"><h3>per quest</h3></span>
+                                    </span>
+                                </span>
+
+                                <ul class="stp-li-cont">
+                                    <li><span class="icon-checkmark">✓</span>  10-35 Quest</li>
+                                    <li><span class="icon-checkmark">✓</span>  3-Course Plated Menu</li>
+                                    <li><span class="icon-checkmark">✓</span>  Standard Setup</li>
+                                    <li><span class="icon-checkmark">✓</span>  Custom Decor</li>
+                                    <li><span class="icon-checkmark">✓</span>  Event Staff</li>
+                                </ul>
+
+                                <span class="stp-1-1-box-btn">
+                                    <a href="#">
+                                    <button class="stp-1-1-btn"> Select Package </button> </a>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <!-- Premiun -->
+                        <div class="stp-1-2-item" style="margin-bottom:38px;">
+                            <span class="right-text-plan"><h4>Most Popular</h4></span>
+                            <div class="flex-cont-box">
+                                <div>
+
+                                    <div class="plan-title-cont">
+                                        <h2 class="text-style-1-2">Premium</h2>
+                                        <h3 class="text-below-plan">Wedding Reception</h3>
+                                    </div>
+                                    
+                                    <span class="inline-text-plan">
+                                        <span class="price-change-plan"><h2>$125</h2></span>
+                                        <span style="font-size: 14px; color:#808080;"><h3>per quest</h3></span>
+                                    </span>
+                                </div>
+
+                                <ul class="stp-li-cont">
+                                    <li><span class="icon-checkmark">✓</span>  10-75 guests</li>
+                                    <li><span class="icon-checkmark">✓</span>  5-Course Premium Menu</li>
+                                    <li><span class="icon-checkmark">✓</span>  Dedicated Terminator </li>
+                                    <li><span class="icon-checkmark">✓</span>  Custom Decor</li>
+                                    <li><span class="icon-checkmark">✓</span>  VIP Service</li>
+                                </ul>
+
+                                <span class="stp-1-1-box-btn">
+                                    <a href="#">
+                                    <button class="stp-1-1-btn"> Select Package </button> </a>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <!-- Luxury -->
+                        <div class="stp-1-2-item">
+                            <div class="flex-cont-box">
+                                <span>
+                                    <h2 class="text-style-1">Luxury</h2>
+                
+                                    <span class="inline-text-plan">
+                                        <span class="price-change-plan"><h2>$195</h2></span>
+                                        <span style="font-size: 14px; color:#808080;"><h3>per quest</h3></span>
+                                    </span>
+                                </span>
+
+                                <ul class="stp-li-cont">
+                                    <li><span class="icon-checkmark">✓</span>  10-50 guests</li>
+                                    <li><span class="icon-checkmark">✓</span>  7-Course Luxury Menu</li>
+                                    <li><span class="icon-checkmark">✓</span>  Full Event Team </li>
+                                    <li><span class="icon-checkmark">✓</span>  Private Chefs</li>
+                                    <li><span class="icon-checkmark">✓</span>  VIP Service</li>
+                                </ul>
+
+                                <span class="stp-1-1-box-btn">
+                                    <a href="#">
+                                    <button class="stp-1-1-btn"> Select Package </button> </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Beverage Station -->
+                    <span class="stp-1-title"><h2>Enhance Your Event</h2></span>
+                    <div class="event-enhance-flex-cont">
+                        <div class="event-enhance-flex-item">
+                            <div class="event-enhance-box">
+                                <span class="rectangle-left"></span>
+
+                                <h2 class="text-box-title">Beverage Station</h2>
+                                <p>Variety of freshly squeezed juices and smoothies.</p>
+
+                                <span class="box-border-tag" style="margin:0 10px 0 70px;"><h3>Coffee Bar</h3></span>
+                                <span class="box-border-tag"><h3>Juice Bar</h3></span>
+                                <h4 style="margin-left: 19rem;">+$1300</h4>
+
+                            </div>
+                        </div>
+
+                        <!-- Premiun Decor -->
+                        <div class="event-enhance-flex-item">
+                            <div class="event-enhance-box">
+                                <span class="rectangle-left"></span>
+
+                                <h2 class="text-box-title">Premium Décor</h2>
+                                <p>Custom Styling done by professionals </p>
+
+                                <span class="box-border-tag" style="margin:0 10px 0 70px;"><h3>Personalized decore </h3></span>
+                                <span class="box-border-tag"><h3>Florals</h3></span>
+                                <h4 style="margin:40px 0 0 19rem;">+$2600</h4>
+
+                            </div>
+                        </div>
+
+                        <!-- Photographer -->
+                        <div class="event-enhance-flex-item">
+                            <div class="event-enhance-box">
+                                <span class="rectangle-left"></span>
+
+                                <h2 class="text-box-title">Photographer</h2>
+                                <p>High-quality, beautifully captured images.</p>
+
+                                <span class="box-border-tag" style="margin:0 10px 0 70px;"><h3>Professional Photos </h3></span>
+                                <span class="box-border-tag"><h3>Digital Album</h3></span>
+                                <h4 style="margin:40px 0 0 19rem;">+$1600</h4>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        </section>
+
+        <section class="step-section" data-step="2">
+            <!-- <div class="step-content-wrapper"> -->
+                <!-- Step 2 content -->
+            </div>
+        </section> 
+
+        <section class="step-section" data-step="3">
+            <!-- <div class="step-content-wrapper"> -->
+                <!-- Step 3 content -->
+            </div>
+        </section>
+
+        <section class="step-section" data-step="4">
+            <!-- <div class="step-content-wrapper"> -->
+                <!-- Step 4 content -->
+            </div>
+        </section>
+
+        <section class="step-section" data-step="5">
+            <!-- <div class="step-content-wrapper"> -->
+                <!-- Step 5 content -->
+            </div>
+        </section>
+
+        
+        <div class="nav-buttons">
+            <button class="nav-btn prev" disabled>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+                </svg>
+                <span>Previous</span>
+            </button>
+            <button class="nav-btn next">
+                <span>Next</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
+    </main>
+</body>
+</html>

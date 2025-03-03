@@ -604,6 +604,7 @@ body {
     max-width: 1200px;
     border: 1px solid #e0e0e0;
     padding-bottom:400px;
+    font-family:'Inter', sans-serif;
 }
 
 .stp-2-h2 {
@@ -686,7 +687,7 @@ body {
 }
 
 .text-title-1 h2{
-    padding-right: 220px;
+    padding-right: 210px;
 
 }
 
@@ -815,7 +816,7 @@ body {
     }
     
     .text-title-1{
-        padding-right:100px;
+        padding-right:90px;
     }
     
     .text-title-2{
