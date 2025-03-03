@@ -572,129 +572,322 @@ body {
     }
 }
 
-.step-content{
+
+:root {
+    --color-primary: #1a2e28;
+    --color-accent: #c69455;
+    --color-accent-light: rgba(198, 148, 85, 0.25);
+    --color-bg: #fcf9f2;
+    --color-text: #2C4A3C;
+    --color-text-light: #666;
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --border-radius: 12px;
+    --gold-gradient: linear-gradient(135deg, #c69455, #deb887);
+}
+
+.step-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 1200px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid #e0e0e0;
+}
+
+.reservation-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.reservation-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 65%;
+}
+
+.summary-container {
+    width: 35%;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+    height: fit-content;
+}
+
+.reservation-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    height: 100%;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.icon-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-accent-light);
+    color: var(--color-text);
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.card-title {
+    margin: 0;
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+
+.info-row, .price-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    position: relative;
+}
+
+.info-row:not(:last-child)::after,
+.price-row:not(.total-row):not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.info-label, .price-label {
+    font-weight: 500;
+    color: var(--color-text-light);
+}
+
+.info-value, .price-value {
+    font-weight: 600;
+    color: var(--color-text);
+    text-align: right;
+}
+
+.total-row {
+    margin-top: 10px;
+    padding-top: 15px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.total-row .price-label,
+.total-row .price-value {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.preferences-section,
+.requests-section {
+    margin-bottom: 15px;
+}
+
+.section-title {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-light);
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dietary-tag {
+    display: inline-block;
+    background-color: var(--color-accent-light);
+    color: var(--color-accent);
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.request-text {
+    margin: 0;
+    color: var(--color-text-light);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.summary-card {
+    background: #fff;
+}
+
+.confirm-section {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    background-color: var(--color-bg);
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    margin: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #ffff;
-    border-radius: 20px;
-    border: 1px solid #e0e0e0;
-    padding: 20px;
+    gap: 10px;
 }
 
-/* step 5 section */
+.confirm-button {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+}
 
-.Step-5-container {
-        display: grid;
-        grid-template-columns: 60% 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-auto-rows: 1fr;
-        gap: 5px 5px;
-        padding: 50px;
-        background-color:   #ffff ;
-      }
-      
-      .item:nth-child(1) {
-        grid-row: 1 / 2;
-        grid-column: 1 / 2;
-        margin-left: 35%;
+.confirm-button:hover {
+    background-color: #b78346;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(198, 148, 85, 0.2);
+}
 
-      }
-      
-      .item:nth-child(2) {
-        grid-column: 2 / 4;
-        grid-row: 1 / 5;
-        position: sticky;
+.confirm-disclaimer {
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-text-light);
+    text-align: center;
+}
 
-        top: 15rem;
-        height: 700px;
-      }
-      
-      .item:nth-child(3) {
-        grid-area: 2 / 1 / 3 / 2;
-        grid-column: 1 / 2;
-        margin-left: 35%;
-
-      }
-      
-      .item:nth-child(4) {
-        grid-area: 3 / 1 / 4 / 2;
-        grid-column: 1 / 2;
-        margin-left: 35%;
-
-      }
-      
-      .item:nth-child(5) {
-        grid-area: 4 / 1 / 5 / 2;
-        grid-column: 1 / 2;
-        grid-row: 4 / 6;
-        margin-left: 35%;;
-        font-weight: 700;
-      }
-      .step-5-title{
-        background-color: rgba(198, 148, 85, 0.25) ;
-        color: #2C4A3C;
-        border-radius: 10px;
-        font-size: 24px;
-        width: 5%;
-        text-align: center;
-        max-width: 13px;
-        padding-right: 20px;
-        padding-left: 2.5px;
-        padding-bottom: 5px;
-        padding-top: 1px;
-        display: inline-block;
-      }
-      .step-5-text{
-        color: #2C4A3C;
-        font-weight: 700;
-        display: inline-block;
-      }
-      .step-5-free{
-        background-color: rgba(198, 148, 85, 0.25) ;
-        color: rgba(198, 148, 85, 1);
-        border-radius: 10px;
-        width: 150px;
-      }
-      .step-5-Confirm{
-        background-color: rgba(198, 148, 85, 1);
-        color: white;
-        border-radius: 8px;
-        width: 170px;
-        padding: 10px;
-      }
-      .step-5-small{
-        font-size: 12px;
-        font-weight: 300;
-      }
-
-      td{
-        padding: 20px;
-      }
-      .step-5-text-container {
-        display: inline-block;
-        position: relative;
+/* Media Queries */
+@media (max-width: 1024px) {
+    .reservation-container {
+        flex-direction: column;
     }
-
-    .step-5-text-container::after {
-        content: "";
-        display: block;
+    
+    .reservation-main, .summary-container {
         width: 100%;
-        height: .25px; /* Thickness of the line */
-        background-color: rgba(128, 128, 128, 0.65); /* Line color */
-        opacity: 0.35;
-        position: absolute;
-        left: 0;
-        bottom: -5px; /* Space between the text and the line */
     }
-/*come on push*/ 
+    
+    .summary-container {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .step-content {
+        padding: 15px;
+    }
+    
+    .reservation-main {
+        gap: 15px;
+    }
+    
+    .card-header {
+        padding: 12px 15px;
+    }
+    
+    .card-content {
+        padding: 12px 15px;
+    }
+    
+    .info-row, .price-row {
+        padding: 10px 0;
+    }
+    
+    .icon-badge {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+    }
+    
+    .card-title {
+        font-size: 15px;
+    }
+    
+    .info-label, .price-label,
+    .info-value, .price-value {
+        font-size: 14px;
+    }
+    
+    .total-row .price-label,
+    .total-row .price-value {
+        font-size: 16px;
+    }
+    
+    .dietary-tag {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .step-content {
+        padding: 10px;
+    }
+    
+    .reservation-main {
+        gap: 10px;
+    }
+    
+    .card-header {
+        padding: 10px 12px;
+    }
+    
+    .card-content {
+        padding: 10px 12px;
+    }
+    
+    .info-row, .price-row {
+        padding: 8px 0;
+    }
+    
+    .icon-badge {
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+    }
+    
+    .card-title {
+        font-size: 14px;
+    }
+    
+    .info-label, .price-label,
+    .info-value, .price-value {
+        font-size: 12px;
+    }
+    
+    .total-row .price-label,
+    .total-row .price-value {
+        font-size: 14px;
+    }
+    
+    .dietary-tag {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+
+.step-title{
+    color: #2C4A3C;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}

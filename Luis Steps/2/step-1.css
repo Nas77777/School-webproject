@@ -594,15 +594,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
 /* STEP-1 */
 
 /* There where some bug with the white box so I make this */
@@ -613,6 +604,7 @@ body {
     margin: auto;
     max-width: 1240px;
     border: 1px solid #e0e0e0;
+    height: 1200px;
 }
 
 .space-responsive{
