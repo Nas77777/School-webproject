@@ -17,7 +17,7 @@
 body {
     margin: 0;
     background: #FCF9F2;
-    font-family: system-ui, sans-serif;
+    font-family: "inter", sans-serif;
 }
 
 .progress-wrapper {
@@ -647,7 +647,6 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px 15px 0 0;
     font-weight: 300;
-    font-family: "Montserrat";
 }
 
 .flex-items h1 {
