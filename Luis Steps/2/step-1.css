@@ -742,6 +742,7 @@ body {
 }
 
 .stp-1-box-2{
+    display: block;
     height:6rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -798,6 +799,14 @@ body {
     padding-left:5px;
     position:relative;
     bottom:6px; 
+}
+
+.hidden-checkbox {
+    display: none;
+}
+
+.hidden-checkbox:checked + .stp-1-inline-box h2 {
+    color:var(--color-accent);
 }
 
 
