@@ -1,66 +1,56 @@
-/* The body of the code */
 body {  
-
-    font-family : Arial,  sans-serif ;
-    background-color :  #FAF8F2;
-    text-align : center;
-    margin : 0;
-    padding : 20px;
-    color : #2C3E50;
-
-
+    font-family: Arial, sans-serif;
+    background-color: #FAF8F2;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: #2C3E50;
 }
-/* the container */
 
 .container {
-    max-width  : 1000px;
-    margin : auto;
-    background : white;
-    padding : 40px;
-    border-radius : 10px;
-    box-shadow : 0px 4px 10px rgba(0, 0, 0, 0.1) ;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
-/*Gives the color and font size to the  "Make reservations" title */
 h1 {
-
     color: #1E5631;
     font-size: 32px;
-
 }
 
-/*Modifies the options containers */
 .reservation-options {
-    display : flex;
-    justify-content : space-between;
-    align-items : stretch;  /* Ensures all boxes have the same height */
-    gap : 20px;
-    flex-wrap : nowrap;  /* Prevents items from stacking */
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: nowrap;
 }
 
-/*Modifies the boxes option */
 .option {
-
     background: white;
     padding: 20px;
-
     border-radius: 10px;
-    width : 25%; /* Makes sure three fit in a row */
-    min-height: 400px; /* Ensures all cards have the same height */
-    text-align : center;
-    border : 1px solid #EAEDED;
+    width: 25%;
+    min-height: 400px;
+    text-align: center;
+    border: 1px solid #EAEDED;
     transition: 0.3s ease-in-out;
     display: flex;
-
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
-/* Make sure it still works on smaller screens */
 @media (max-width: 900px) {
     .reservation-options {
-        flex-wrap: wrap; /* Allows stacking on small screens */
+        flex-wrap: wrap;
         justify-content: center;
     }
 
@@ -69,108 +59,76 @@ h1 {
     }
 }
 
-/*  hover effects for the box*/
 .option:hover {
     transform: scale(1.05);
     border-color: #bd741c;
 }
 
-/*The stickers in the orange circle */
 .icon {
-
     font-size: 30px;
     margin-bottom: 10px;
     display: flex;
-
     align-items: center;
     justify-content: center;
-
-    width: 60px;  /* Adjust size to be slightly bigger */
+    width: 60px;
     height: 60px;
-
-    background-color : #CDAA7D;  /* Orange background */
-    color : white;  /* Ensure icon color remains visible */
-    border-radius : 50%;  /* Makes it a circle */
-
-    margin-left : auto;
-    margin-right : auto;
- 
+    background-color: #CDAA7D;
+    color: white;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Modifies all the h2 tagged content*/
 h2 {
     color: #1E5631;
     font-size: 27px;
     margin-bottom: 10px;
 }
 
-/* Modifies all the P tagged content*/
 p {
     font-size: 14px;
     color: #5D6D7E;
 }
 
-/* The whole ul list editor */
 ul {
-
-    list-style: none; /* Removes default bullet points */
-    padding : 0;
-    margin : 0;
-
-    text-align: left; /* Aligns content to the left */
-    line-height: 1.75; /* Adjusts line spacing */
-
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    line-height: 1.75;
 }
 
-/*targets the li tag into the ul tag and edits */
-ul li { 
-
-    font-size : 16px;
-    display : flex;
-    align-items : center; /* Ensures text and checkmarks are aligned */
-    gap: 8px ; /* Space between checkmark and text */
-    color:   #5D6D7E;
- 
+ul li {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #5D6D7E;
 }
-
-/* Custom orange checkmark */
 
 ul li::before {
-
-    content: '✔' ;   /* Unicode for checkmark */
-    color : #CDAA7D;   /* Orange checkmark */
-
+    content: '✔';
+    color: #CDAA7D;
     font-size: 18px;
     font-weight: bold;
 }
 
-
-
-/* The Select button editor*/
 button {
-
     background: #CDAA7D;
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
-    
     cursor: pointer;
     margin-top: 10px;
     font-size: 14px;
-
 }
 
-/* Hover effects for the Button*/
 button:hover {
     background: #B98D60;
 }
 
-/* In case to make the border highlighted ( Not in use currently) */
 .highlighted {
-
-    border : 2px solid #CDAA7D;
-    background : #FAF8F2; 
-
+    border: 2px solid #CDAA7D;
+    background: #FAF8F2;
 }
-
