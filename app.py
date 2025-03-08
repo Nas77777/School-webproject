@@ -458,7 +458,7 @@ def about():
 
 @app.route('/refrences', methods=['GET', 'POST'])
 def refrences():
-
+    pass
     return render_template('Refrence.HTML')
 
 
